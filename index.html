@@ -1,0 +1,1267 @@
+<!doctype html>
+<html lang="en-GB">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>Separate Chemistry Plan</title>
+<meta name="description" content="A week-by-week AQA GCSE Chemistry (8462) plan with video lessons, a checklist, exam favourites and progress tracking.">
+<style>:root{color-scheme:light;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}html{scroll-padding-top:env(safe-area-inset-top,0px)}body{margin:0;padding:0;font:14px -apple-system,BlinkMacSystemFont,sans-serif;background:#fff;color:#000}img{max-width:100%}[hidden]:not([hidden=until-found i]){display:none!important}</style>
+<style>
+/* Layout: one column, sticky tab bar, six panels (Start, Timeline, Checklist, How to revise, Exam favourites, My progress). Same house style as the Combined plan: Arial, cream paper, amber for "getting there", purple for HIGHER TIER, blue for CHEMISTRY ONLY, no red. */
+:root{
+  --paper:#FAF3E0; --card:#FFFDF6; --ink:#2B2A26; --muted:#6A6455; --line:#E2D6B8;
+  --accent:#1E5C68; --accent-soft:#DCEBEC;
+  --amber:#9A5B00; --amber-soft:#FBE7C2;
+  --green:#2C7449; --green-soft:#DCEFE2;
+  --ht:#62379A; --ht-soft:#EEE5F8;
+  --hol:#7A6A3A; --hol-soft:#F1E8CF;
+  --co:#2F4F8A; --co-soft:#E3E9F6;
+  --font:Arial, "Helvetica Neue", Helvetica, sans-serif;
+}
+@media (prefers-color-scheme: dark){:root:not([data-theme="light"]){
+  --paper:#1C1A16; --card:#26231D; --ink:#EFE9DA; --muted:#AAA290; --line:#3B362C;
+  --accent:#74C4D0; --accent-soft:#1D3438;
+  --amber:#F0B85A; --amber-soft:#3C2E12;
+  --green:#7DCB98; --green-soft:#1D3426;
+  --ht:#C7A8EE; --ht-soft:#2F2541;
+  --hol:#D8C48A; --hol-soft:#332C1A; --co:#9DB5EC; --co-soft:#1F2A40; color-scheme:dark}}
+:root[data-theme="dark"]{
+  --paper:#1C1A16; --card:#26231D; --ink:#EFE9DA; --muted:#AAA290; --line:#3B362C;
+  --accent:#74C4D0; --accent-soft:#1D3438;
+  --amber:#F0B85A; --amber-soft:#3C2E12;
+  --green:#7DCB98; --green-soft:#1D3426;
+  --ht:#C7A8EE; --ht-soft:#2F2541;
+  --hol:#D8C48A; --hol-soft:#332C1A; --co:#9DB5EC; --co-soft:#1F2A40; color-scheme:dark}
+*{box-sizing:border-box}
+html.big{font-size:118%}
+body{background:var(--paper);color:var(--ink);font-family:var(--font);font-size:1rem;line-height:1.55;margin:0}
+a{color:var(--accent);font-weight:bold}
+a:focus-visible,button:focus-visible,summary:focus-visible{outline:3px solid var(--accent);outline-offset:2px}
+.wrap{max-width:820px;margin:0 auto;padding-inline:16px;padding-block:8px 48px}
+h1,h2,h3{text-wrap:balance;line-height:1.25;margin:0}
+h1{font-size:1.75rem}
+h2{font-size:1.35rem;margin-block:28px 10px;color:var(--accent)}
+h3{font-size:1.08rem}
+p{margin:0 0 12px}
+.lede{max-width:65ch}
+.small{font-size:.9rem;color:var(--muted)}
+.label{font-size:.75rem;letter-spacing:.06em;text-transform:uppercase;font-weight:bold;color:var(--muted)}
+
+.tabs{position:sticky;top:env(safe-area-inset-top,0px);z-index:5;background:var(--paper);border-bottom:2px solid var(--line);display:flex;gap:4px;overflow-x:auto;padding:8px 16px 0;scrollbar-width:none}
+.tabs::-webkit-scrollbar{display:none}
+.tab{flex:0 0 auto;font:inherit;font-weight:bold;font-size:.95rem;background:none;border:0;border-bottom:4px solid transparent;color:var(--muted);padding:10px 12px;cursor:pointer}
+.tab[aria-selected="true"]{color:var(--accent);border-bottom-color:var(--accent)}
+.panel{padding-top:16px}
+
+.hero{display:grid;gap:14px;padding-block:20px 8px}
+.countdown{display:flex;flex-wrap:wrap;gap:10px}
+.count{background:var(--card);border:2px solid var(--line);border-radius:10px;padding:10px 14px;min-width:0;flex:1 1 200px}
+.count b{display:block;font-size:1.6rem;font-variant-numeric:tabular-nums;color:var(--accent)}
+.thisweek{background:var(--accent-soft);border-left:6px solid var(--accent);border-radius:8px;padding:14px 16px}
+.thisweek .label{color:var(--accent)}
+
+ol.steps{list-style:none;counter-reset:s;padding:0;margin:0;display:grid;gap:10px}
+ol.steps>li{counter-increment:s;display:grid;grid-template-columns:2.2rem 1fr;gap:10px;align-items:start}
+ol.steps>li::before{content:counter(s);width:2.2rem;height:2.2rem;border-radius:50%;background:var(--accent);color:var(--paper);display:grid;place-items:center;font-weight:bold}
+ol.steps>li>div{min-width:0;padding-top:.3rem}
+
+.res{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:10px}
+.res .item{background:var(--card);border:1px solid var(--line);border-radius:8px;padding:12px 14px;min-width:0}
+.res .item p{margin:4px 0 0;font-size:.92rem;color:var(--muted)}
+
+.phase{margin-top:22px}
+.phase-head{display:flex;flex-wrap:wrap;align-items:baseline;gap:6px 12px;border-bottom:2px solid var(--line);padding-bottom:6px}
+.phase-head .label{color:var(--accent)}
+.weeks{list-style:none;margin:0;padding:0}
+.week{display:grid;grid-template-columns:6.2rem 1fr;gap:12px;padding:12px 0;border-bottom:1px solid var(--line)}
+.week .when{font-weight:bold;font-variant-numeric:tabular-nums;font-size:.92rem}
+.week .when span{display:block;font-weight:normal;color:var(--muted);font-size:.8rem}
+.week .what{min-width:0}
+.week .what p{margin:4px 0 0}
+.week.hol{background:var(--hol-soft);border-radius:6px;padding-inline:10px;border-bottom:0;margin-block:4px}
+.week.hol .when{color:var(--hol)}
+.week.now{background:var(--accent-soft);border-radius:6px;padding-inline:10px;border-bottom:0;box-shadow:inset 6px 0 0 var(--accent)}
+.week.exam{background:var(--ink);color:var(--paper);border-radius:6px;padding-inline:10px;margin-block:6px;border-bottom:0}
+.week.exam .when span{color:var(--paper);opacity:.8}
+.week.past{opacity:.55}
+.tag{display:inline-block;font-size:.75rem;font-weight:bold;padding:2px 8px;border-radius:99px;background:var(--accent-soft);color:var(--accent);margin:4px 4px 0 0;border:0;cursor:pointer;font-family:inherit}
+.tag.now{background:var(--accent);color:var(--paper)}
+
+.overall{background:var(--card);border:1px solid var(--line);border-radius:10px;padding:14px 16px;display:grid;gap:8px}
+.bar{height:12px;border-radius:99px;background:var(--line);overflow:hidden;display:flex}
+.bar i{display:block;height:100%}
+.bar .g{background:var(--green)} .bar .a{background:var(--amber)}
+.key{display:flex;flex-wrap:wrap;gap:6px 14px;font-size:.88rem;color:var(--muted)}
+.key span::before{content:"";display:inline-block;width:10px;height:10px;border-radius:2px;margin-right:6px;vertical-align:-1px;background:var(--c)}
+details.topic{background:var(--card);border:1px solid var(--line);border-radius:10px;margin-top:10px}
+details.topic>summary{list-style:none;cursor:pointer;padding:14px 16px;display:grid;grid-template-columns:1fr auto;gap:6px 12px;align-items:center}
+details.topic>summary::-webkit-details-marker{display:none}
+details.topic>summary h3{min-width:0}
+details.topic>summary .prog{font-size:.85rem;color:var(--muted);font-variant-numeric:tabular-nums;white-space:nowrap}
+details.topic>summary .bar{grid-column:1/-1;height:6px}
+details.topic[open]>summary{border-bottom:1px solid var(--line)}
+.tbody{padding:12px 16px 16px;display:grid;gap:14px}
+.learn{background:var(--paper);border-radius:8px;padding:12px 14px}
+.learn ul{margin:6px 0 0;padding-left:20px}
+.learn li{margin:3px 0}
+ul.checks{list-style:none;margin:0;padding:0;display:grid;gap:6px}
+ul.checks li{display:grid;grid-template-columns:1fr auto;gap:10px;align-items:center;padding:8px 10px;border-radius:8px;border:1px solid var(--line)}
+ul.checks li .t{min-width:0}
+ul.checks li.s1{background:var(--amber-soft);border-color:transparent}
+ul.checks li.s2{background:var(--green-soft);border-color:transparent}
+.state{font:inherit;font-size:.82rem;font-weight:bold;border-radius:99px;padding:6px 10px;min-width:7.6rem;cursor:pointer;border:2px solid var(--muted);background:transparent;color:var(--muted)}
+li.s1 .state{border-color:var(--amber);color:var(--amber)}
+li.s2 .state{border-color:var(--green);color:var(--green)}
+.ht,.win,.co{display:inline-block;font-size:.7rem;font-weight:bold;letter-spacing:.05em;border-radius:4px;padding:0 5px;margin-left:6px;vertical-align:1px;white-space:nowrap}
+.ht{color:var(--ht);background:var(--ht-soft);border:1px solid var(--ht)}
+.win{color:var(--paper);background:var(--accent);border:1px solid var(--accent)}
+.co{color:var(--co);background:var(--co-soft);border:1px solid var(--co)}
+.six{display:grid;gap:10px}
+.six .blk{background:var(--card);border:1px solid var(--line);border-radius:8px;padding:12px 14px}
+.six .lvl{font-size:.88rem;color:var(--muted);font-style:italic;margin:4px 0 6px}
+.btnrow{display:flex;flex-wrap:wrap;gap:8px}
+.btn{font:inherit;font-weight:bold;font-size:.9rem;border-radius:8px;padding:8px 12px;border:2px solid var(--accent);background:transparent;color:var(--accent);cursor:pointer}
+.confirm{font-size:.9rem;background:var(--amber-soft);border-radius:8px;padding:10px 12px}
+
+.session{display:grid;gap:10px}
+.session .blk{display:grid;grid-template-columns:4.4rem 1fr;gap:12px;background:var(--card);border:1px solid var(--line);border-radius:8px;padding:12px 14px}
+.session .mins{font-weight:bold;color:var(--accent);font-variant-numeric:tabular-nums}
+.session .blk>div{min-width:0}
+.callout{border-left:6px solid var(--accent);background:var(--accent-soft);border-radius:8px;padding:12px 14px}
+.ladder{display:flex;flex-wrap:wrap;gap:6px;align-items:center;font-weight:bold}
+.ladder span{background:var(--card);border:1px solid var(--line);border-radius:6px;padding:4px 10px}
+.cmd{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:8px}
+.cmd div{background:var(--card);border:1px solid var(--line);border-radius:8px;padding:10px 12px;font-size:.93rem}
+
+.fav{background:var(--card);border:1px solid var(--line);border-radius:10px;padding:14px 16px;margin-top:10px;display:grid;gap:6px}
+.fav .top{display:flex;flex-wrap:wrap;justify-content:space-between;gap:4px 12px;align-items:baseline}
+.fav .marks{font-size:.85rem;color:var(--muted);white-space:nowrap}
+.fav .say{background:var(--green-soft);border-radius:6px;padding:8px 10px;font-size:.95rem}
+.fav .trap{background:var(--amber-soft);border-radius:6px;padding:8px 10px;font-size:.95rem}
+.fav .where{font-size:.9rem}
+.fav .src{font-size:.78rem;color:var(--muted)}
+.tblwrap{overflow-x:auto}
+table{border-collapse:collapse;width:100%;font-size:.93rem}
+th,td{text-align:left;padding:8px 10px;border-bottom:1px solid var(--line);vertical-align:top}
+th{font-size:.78rem;letter-spacing:.05em;text-transform:uppercase;color:var(--muted)}
+@media (max-width:480px){
+  .week{grid-template-columns:1fr;gap:2px}
+  .session .blk{grid-template-columns:1fr;gap:2px}
+  ul.checks li{grid-template-columns:1fr}
+  .state{justify-self:start}
+}
+details.try{border:1px solid var(--line);border-radius:8px;background:var(--paper)}
+details.try>summary{cursor:pointer;padding:10px 12px;font-weight:bold;color:var(--accent)}
+details.try .done{font-size:.8rem;font-weight:bold;color:var(--green);margin-left:6px}
+.tbody2{padding:0 12px 12px;display:grid;gap:8px}
+.tbody2 .q{margin:0;font-weight:bold}
+.hint{background:var(--accent-soft);border-radius:6px;padding:8px 10px}
+.ans{background:var(--green-soft);border-radius:6px;padding:8px 10px}
+.ans ul{margin:6px 0 0;padding-left:20px}
+.btn.sm{font-size:.82rem;padding:5px 10px}
+.scorebtns{display:flex;flex-wrap:wrap;gap:6px}
+.sbtn{font:inherit;font-weight:bold;min-width:2.6rem;padding:6px 0;border-radius:8px;border:2px solid var(--accent);background:var(--card);color:var(--accent);cursor:pointer}
+.sbtn.on{background:var(--accent);color:var(--paper)}
+.videocard{background:var(--card);border:2px solid var(--accent);border-radius:10px;padding:14px 16px;margin-top:14px}
+.videocard .label{color:var(--accent)}
+a.btn{display:inline-block;text-decoration:none}
+td.num{font-variant-numeric:tabular-nums;white-space:nowrap}
+.logform{display:grid;gap:10px;max-width:520px}
+.logform label{display:grid;gap:4px;font-weight:bold;font-size:.92rem}
+.logform input,.logform select,#sum-box{font:inherit;font-weight:normal;padding:8px 10px;border:1px solid var(--muted);border-radius:8px;background:var(--card);color:var(--ink);width:100%;min-width:0}
+.logform .pair{display:grid;grid-template-columns:1fr 1fr;gap:10px}
+#sum-box{margin-top:8px}
+.skip{position:absolute;left:-9999px;top:0;background:var(--accent);color:var(--paper);padding:10px 14px;border-radius:0 0 8px 0;z-index:10}
+.skip:focus{left:0}
+.panel>h1:focus{outline:none}
+.tag.plain{cursor:default;background:var(--hol-soft);color:var(--hol)}
+.watch{margin:8px 0 0;font-size:.92rem}
+.watch a{font-weight:bold}
+.watch .label{margin-right:4px}
+details.qc{border:1px solid var(--line);border-radius:8px;background:var(--paper)}
+details.qc>summary{cursor:pointer;padding:10px 12px;font-weight:bold;color:var(--accent)}
+.qcbody{padding:0 12px 12px;display:grid;gap:12px}
+.qitem{background:var(--card);border:1px solid var(--line);border-radius:8px;padding:10px 12px;display:grid;gap:8px}
+.qitem .q{margin:0;font-weight:bold}
+.qopts{display:grid;gap:6px}
+.qopt{font:inherit;text-align:left;padding:8px 10px;border-radius:8px;border:2px solid var(--line);background:var(--paper);color:var(--ink);cursor:pointer}
+.qopt.right{border-color:var(--green);background:var(--green-soft)}
+.qopt.wrong{border-color:var(--amber);background:var(--amber-soft)}
+.qfb:empty{display:none}
+.qfb{border-radius:6px;padding:8px 10px;font-size:.95rem}
+.qfb.ok{background:var(--green-soft)}
+.qfb.no{background:var(--amber-soft)}
+.trap{display:grid;gap:6px}
+.trap .bad{margin:0}
+.trap .bad::before{content:"Students write: ";font-weight:bold;color:var(--amber)}
+.why{width:100%;min-width:0;font:inherit;padding:8px 10px;border:1px solid var(--muted);border-radius:8px;background:var(--card);color:var(--ink)}
+.helper{display:grid;gap:8px;grid-template-columns:repeat(auto-fit,minmax(230px,1fr))}
+.helper div{background:var(--card);border:1px solid var(--line);border-radius:8px;padding:12px 14px;min-width:0}
+.helper div p{margin:4px 0 0;font-size:.95rem}
+.fix{background:var(--amber-soft);border-radius:8px;padding:12px 14px}
+.fix ul{margin:6px 0 0;padding-left:20px}
+.fix li{margin:4px 0}
+.weeks-log{display:flex;flex-wrap:wrap;gap:8px;margin-top:10px}
+.weeks-log div{background:var(--card);border:1px solid var(--line);border-radius:8px;padding:6px 10px;font-size:.88rem;font-variant-numeric:tabular-nums}
+</style>
+</head>
+<body>
+<a class="skip" href="#main">Skip to main content</a>
+
+<nav class="tabs" role="tablist" aria-label="Sections">
+  <button class="tab" role="tab" id="tab-start" aria-controls="p-start" aria-selected="true">Start here</button>
+  <button class="tab" role="tab" id="tab-timeline" aria-controls="p-timeline" aria-selected="false">Timeline</button>
+  <button class="tab" role="tab" id="tab-checklist" aria-controls="p-checklist" aria-selected="false">Checklist</button>
+  <button class="tab" role="tab" id="tab-revise" aria-controls="p-revise" aria-selected="false">How to revise</button>
+  <button class="tab" role="tab" id="tab-exam" aria-controls="p-exam" aria-selected="false">Exam favourites</button>
+  <button class="tab" role="tab" id="tab-progress" aria-controls="p-progress" aria-selected="false">My progress</button>
+</nav>
+
+<main class="wrap" id="main" tabindex="-1">
+
+<!-- START HERE -->
+<section class="panel" id="p-start" role="tabpanel" aria-labelledby="tab-start">
+  <div class="hero">
+    <p class="label">Fundamental Chemistry · AQA GCSE Chemistry (8462) · Higher</p>
+    <h1>Your separate chemistry plan</h1>
+    <p class="lede">This plan takes you step by step from today to your two chemistry exams. It covers everything in GCSE Chemistry, including the extra separate chemistry topics. Each week has one clear job, a video lesson for each part of it, and everything else you need linked in one place. You will be learning most of this for the first time, so the plan teaches it step by step, and Mr Hussain marks the work you send him. If you used your first chemistry plan, you have already started on atoms and calculations, and this plan builds on them.</p>
+    <div class="countdown" id="countdown"></div>
+    <div class="thisweek" id="thisweek"></div>
+  </div>
+
+  <h2>Your two chemistry exams</h2>
+  <div class="tblwrap"><table>
+    <thead><tr><th>Exam</th><th>Date</th><th>Topics</th></tr></thead>
+    <tbody>
+      <tr><td><b>Chemistry Paper 1</b><br><span class="small">1 hour 45 minutes, 100 marks</span></td><td>Monday 17 May 2027, morning</td><td>1 Atomic structure and the periodic table · 2 Bonding, structure and properties · 3 Quantitative chemistry · 4 Chemical changes · 5 Energy changes</td></tr>
+      <tr><td><b>Chemistry Paper 2</b><br><span class="small">1 hour 45 minutes, 100 marks</span></td><td>Tuesday 15 June 2027, morning</td><td>6 Rates and equilibrium · 7 Organic chemistry · 8 Chemical analysis · 9 The atmosphere · 10 Using resources</td></tr>
+    </tbody>
+  </table></div>
+  <p class="small">Paper 2 can also use ideas from Topics 1, 2 and 3.</p>
+
+  <h2>How this plan works</h2>
+  <ol class="steps">
+    <li><div><b>Watch the how to revise video</b> first. It takes about four and a half minutes. <a class="video-link" href="#" target="_blank" rel="noopener">Watch the video</a></div></li>
+    <li><div><b>Check the Timeline</b> to see this week's job.</div></li>
+    <li><div><b>Watch this week's video lessons first.</b> They are linked on the Timeline and the Checklist. Pause them to make notes, and after each one close it and write down the key points from memory before you check.</div></li>
+    <li><div><b>Do four 30-minute sessions</b> on it, on different days, using the routine in How to revise and the links on the Checklist. Weeks marked <span class="tag plain">5 sessions</span> need one more, because the content is harder. If four sessions start to feel comfortable, add a fifth: the more chemistry you do now, the easier the final push will be. Tap <b>I've done a session</b> on My progress each time.</div></li>
+    <li><div><b>Finish the week with that topic's Exam favourites and Quick checks.</b> Each favourite has a Try it question with a hint and a worked answer. Mark your answer and tap your score to save it.</div></li>
+    <li><div><b>Every two weeks, send your work to Mr Hussain.</b> Weeks marked <span class="tag plain">Send work</span> on the Timeline are the ones. <button type="button" class="tag" data-go="send-work">What to send</button></div></li>
+    <li><div><b>Update the Checklist</b>, then look at My progress to see which topics to work on next.</div></li>
+  </ol>
+  <div class="callout" style="margin-top:14px">Each topic starts with its BIG WIN statements, which come up most often. Once those feel secure, the HIGHER TIER statements and the six-mark answers are where the top grades come from, all the way to grade 9. If a week doesn't go to plan, pick up with this week's job.</div>
+  <p style="margin-top:14px"><button class="btn" type="button" id="txt-size">Make text larger</button></p>
+
+  <h2>Your why</h2>
+  <p class="lede">Why does doing well in chemistry matter to you? Write it in under 50 words, then come back and read it on the days a session feels hard.</p>
+  <label for="why" class="small">My why</label>
+  <textarea id="why" class="why" rows="3"></textarea>
+  <p class="small" id="why-msg" aria-live="polite"></p>
+
+  <h2>Where everything lives</h2>
+  <div class="res" id="resources"></div>
+
+
+  <h2>For whoever helps you at home</h2>
+  <p class="lede">You do not need to know any chemistry to help. These are the most useful things to do.</p>
+  <div class="helper">
+    <div><b>Quiz with the flashcards</b><p>Hold up the question side and wait for a full answer, said out loud, before turning it over. A card only goes to the back of the pack once it has been right three days in a row.</p></div>
+    <div><b>Ask for a brain dump</b><p>Name an earlier topic and give three minutes to write down everything they remember, then check it against their summary sheet together.</p></div>
+    <div><b>Run a timed paper</b><p>A quiet room, the phone in another room, and only a calculator, ruler, pencil and black pen. Use the time on the Timeline, give a ten-minute warning, and stop at the end. They mark it afterwards in a different colour.</p></div>
+    <div><b>Check in each week</b><p>On Monday, look at this week's job on the Timeline together. On Friday, ask how many sessions were done (My progress counts them). Praise the sessions done as much as the scores.</p></div>
+    <div><b>Keep Mr Hussain in the loop</b><p>Get in touch with him if a few weeks go by with very few sessions, or if anything is worrying you.</p></div>
+  </div>
+</section>
+
+<!-- TIMELINE -->
+<section class="panel" id="p-timeline" role="tabpanel" aria-labelledby="tab-timeline" hidden>
+  <h1>Week by week to your exams</h1>
+  <p class="lede" style="margin-top:10px">Each week starts on a Monday and the highlighted row is this week. Tap a topic tag to open its links on the Checklist. Holidays are review weeks. Each study week lists its video lessons, so start there.</p>
+  <div id="timeline"></div>
+</section>
+
+<!-- CHECKLIST -->
+<section class="panel" id="p-checklist" role="tabpanel" aria-labelledby="tab-checklist" hidden>
+  <h1>Revision checklist</h1>
+  <p class="lede" style="margin-top:10px">Tap the button next to each statement to show how confident you feel. <span class="win">BIG WIN</span> statements come up often and are worth learning first. <span class="co">CHEMISTRY ONLY</span> statements are the extra separate chemistry content, so use the PMT notes for those. <span class="ht">HIGHER TIER</span> statements are only on the higher paper. Each topic starts with its video lessons and ends with Examiner traps, plus Quick checks for Topics 1, 3 and 4. Your progress saves on this device.</p>
+  <div class="overall" id="overall"></div>
+  <div id="checklist"></div>
+  <h2>Start again</h2>
+  <div id="resetbox"><button class="btn" id="reset" type="button">Clear all my ticks</button></div>
+</section>
+
+<!-- HOW TO REVISE -->
+<section class="panel" id="p-revise" role="tabpanel" aria-labelledby="tab-revise" hidden>
+  <h1>How to revise chemistry</h1>
+  <p class="lede" style="margin-top:10px">The quickest way to remember chemistry is to test yourself on it. Pulling an answer out of your memory makes it stick far better than reading it again, and the harder it feels, the stronger the memory once you get it.</p>
+  <div class="videocard">
+    <span class="label">Watch first</span>
+    <h3 style="margin:4px 0 6px">Mr Hussain's how to revise video</h3>
+    <p style="margin:0 0 10px">About four and a half minutes. It explains the five steps below.</p>
+    <a class="btn video-link" href="#" target="_blank" rel="noopener">Watch the video</a>
+  </div>
+
+  <h2>The five steps</h2>
+  <ol class="steps">
+    <li><div><b>Find it.</b> Find your weak topics from your marks, not from how you feel. My progress adds up the marks you have lost in each topic and shows which to work on first.</div></li>
+    <li><div><b>Understand it.</b> Watch the video lessons for the topic, pausing to make notes. Then make a one-page summary sheet in your own words, using the Learn links on the Checklist. If you can't put something in your own words yet, write it down as a question for Mr Hussain. If a video doesn't click, search YouTube for Freesciencelessons and the topic name to hear it explained another way.</div></li>
+    <li><div><b>Learn it.</b> Copy your sheet onto a whiteboard or paper, reading it out loud as you write, two or three times. Then cover everything and write it again from memory. Add what you missed in a different colour and go again. When you can write it from memory two or three times, you've learnt it for today. Four days later, do it again.</div></li>
+    <li><div><b>Test it.</b> Do the Try it questions and past-paper questions with your notes closed. Then change pen colour, add anything you missed, and mark it. If the answer was on your sheet but not in your head, go back to step 3. If it wasn't on your sheet, add it.</div></li>
+    <li><div><b>Colour it again.</b> Update the Checklist: has Not yet become Getting there, or Getting there become Got it? Then move on to the next topic.</div></li>
+  </ol>
+  <p class="small" style="margin-top:8px">On this page, Not yet, Getting there and Got it work like red, amber and green in the video.</p>
+
+  <h2>One 30-minute session</h2>
+  <ol class="steps">
+    <li><div>Set a timer for 30 minutes and open this week's topic on the Checklist. In your first session on a new topic, use the whole 30 minutes for the video lessons and your summary sheet.</div></li>
+  </ol>
+  <div class="session" style="margin-top:10px">
+    <div class="blk"><div class="mins">5 min</div><div><b>Warm up from memory.</b> With your notes closed, answer three questions: one from this week's topic, one from last week and one from last month. Then mark them. If you got one wrong, that's your brain telling you it needs that one again.</div></div>
+    <div class="blk"><div class="mins">10 min</div><div><b>Understand one chunk.</b> Watch one video lesson, or read one Learn box on the Fundamental Chemistry website or one section of the PMT notes. Close it, then add the key points to your summary sheet in your own words. Watching is only useful if you then do something with it.</div></div>
+    <div class="blk"><div class="mins">5 min</div><div><b>Learn it.</b> Cover your sheet and write that chunk from memory, then check it. Put any definition, test or colour on a flashcard.</div></div>
+    <div class="blk"><div class="mins">10 min</div><div><b>Test it.</b> Do one Try it question, including a calculation if the topic has one. Mark it, save your score, and add anything you missed to your sheet.</div></div>
+  </div>
+
+  <h2>Make it stick</h2>
+  <ol class="steps">
+    <li><div><b>Spread it out.</b> Four or five 30-minute sessions on different days work much better than one long session.</div></li>
+    <li><div><b>Flashcards.</b> Making flashcards is not revising; testing yourself with them is. Say the answer before you turn the card. Only move a card to the back of the pack once you've got it right three days in a row. PMT has ready-made flashcards for every topic.</div></li>
+    <li><div><b>A calculation every session.</b> Calculations come up on both papers and the methods repeat every year, so practise one each time.</div></li>
+    <li><div><b>Brain dump.</b> Once a week, pick an earlier topic and give yourself 3 minutes to write down everything you can remember about it. Then check it against your summary sheet.</div></li>
+    <li><div><b>Mix it up later on.</b> From April, the final push weeks mix questions from different topics. It feels harder, and that is why it works.</div></li>
+    <li><div><b>If writing is slow,</b> say your answers out loud instead. And sleep well, because sleep helps your brain hold on to what you learnt.</div></li>
+  </ol>
+
+
+  <h2>On days you can't get going</h2>
+  <p class="lede">Tell yourself you will do just five minutes, set a timer and start. Most of the time you will keep going, and if you don't, five minutes still counts. If 30 minutes feels too long at first, start with sessions of 10 to 15 minutes and build up. Put your phone in another room before you start.</p>
+
+  <h2>Exam practice: two slow, one fast</h2>
+  <p class="lede">The first time you do a set of exam questions on a topic, allow three minutes a mark. The next time, allow two minutes a mark. Then do it at exam speed, about one minute a mark. Speed comes from knowing the chemistry well, so going slowly at first is not wasted time. The timed papers on the Timeline follow this pattern.</p>
+
+  <h2 id="marking">Marking your own work</h2>
+  <ol class="steps">
+    <li><div><b>Do it with your notes closed,</b> as if it were the exam.</div></li>
+    <li><div><b>Before you look at the mark scheme,</b> open your summary sheet and notes. Correct your answers and finish any you left out, in a different colour.</div></li>
+    <li><div><b>Then mark it with the mark scheme</b> in a third colour.</div></li>
+    <li><div><b>Add anything you missed</b> to your summary sheet or flashcards, and log your score on My progress.</div></li>
+    <li><div><b>If the answer was in your notes and you had learnt it,</b> but you didn't realise that was what the question wanted, write it down as a question for Mr Hussain. That is the kind of thing a lesson would normally sort out, and he can help with it.</div></li>
+  </ol>
+  <div class="cmd" style="margin-top:12px">
+    <div><b>/</b><br>Either answer gets the mark.</div>
+    <div><b>( ) brackets</b><br>Words you don't need for the mark.</div>
+    <div><b>Underlined</b><br>You must use that word.</div>
+    <div><b>allow</b><br>Also gets the mark.</div>
+    <div><b>ignore</b><br>Doesn't gain or lose the mark.</div>
+    <div><b>do not accept</b><br>Does not get the mark.</div>
+    <div><b>ecf</b><br>Error carried forward: you still get later marks for using a wrong earlier answer correctly.</div>
+    <div><b>max</b><br>The most marks you can get from that list.</div>
+    <div><b>Too many answers</b><br>If a question asks for two and you give three, a wrong one can cancel a right one.</div>
+  </div>
+  <p class="small" style="margin-top:10px">Six-mark answers are marked by level, not by counting points. Use the level guide in each Try it, then send your answer to Mr Hussain so he can check the level.</p>
+
+  <h2 id="send-work">Sending work to Mr Hussain</h2>
+  <p class="lede">In the weeks marked <span class="tag plain">Send work</span>, take a clear photo of each piece and email it to Mr Hussain. In a classroom a teacher would look at your work every week. This is how you get the same feedback.</p>
+  <ol class="steps">
+    <li><div><b>One six-mark answer</b> from this fortnight's topics, written with your notes closed, with your own mark on it.</div></li>
+    <li><div><b>One calculation</b> with every step of your working shown.</div></li>
+    <li><div><b>Your questions</b> for Mr Hussain, written as questions.</div></li>
+    <li><div><b>Your progress summary</b> from My progress, pasted into the email.</div></li>
+  </ol>
+  <p class="small" style="margin-top:8px">He will mark your work and tell you what to add. Put his comments on your summary sheet in a different colour.</p>
+
+  <h2>In the exam</h2>
+  <div class="cmd">
+    <div><b>State, give, name</b><br>A short fact.</div>
+    <div><b>Describe</b><br>Say what happens or what you see.</div>
+    <div><b>Explain</b><br>Say why, using "because" or "so".</div>
+    <div><b>Compare</b><br>Write about both things.</div>
+    <div><b>Calculate</b><br>Show every step for method marks.</div>
+    <div><b>Evaluate</b><br>Points for and against, then a judgement with a reason.</div>
+  </div>
+  <p class="small" style="margin-top:10px">Use the marks as a guide: a 3-mark question needs three separate points. For 6-mark questions, see the Six-mark answers section in Exam favourites.</p>
+
+  <h3 style="margin-top:18px">What you need on the day</h3>
+  <ul style="margin:8px 0 0;padding-left:20px">
+    <li>The paper comes with a periodic table. No equations are given, so learn every one in the Maths table in Exam favourites.</li>
+    <li>Bring a black pen and a spare, a pencil, a ruler, a rubber and a scientific calculator, in a clear pencil case. Water goes in a clear bottle with the label off. Phones and smartwatches are not allowed in the exam room.</li>
+    <li>Allow about one minute a mark: 100 marks in 1 hour 45 minutes. If a question is taking too long, move on and come back to it.</li>
+    <li>Write in black ink and use pencil only for graphs and diagrams. If you run out of space, use the extra pages at the back and write "continued on page …" next to the question.</li>
+    <li>Your exam centre will tell you where to go, when to arrive and your candidate number. If you have never sat an exam in an exam room before, ask Mr Hussain what to expect.</li>
+  </ul>
+
+  <h2>Getting help</h2>
+  <div class="ladder"><span>Brain</span>→<span>Board</span>→<span>Book</span>→<span>Boss</span></div>
+  <p class="lede" style="margin-top:10px">Ask yourself what you already know, then check the video lesson, the website or your summary sheet, then your notes, then ask Mr Hussain. Explaining the problem out loud to whoever helps you at home often shows you where the gap is. Write down any question you'd like to go through and email it to Mr Hussain, or add it to the work you send him.</p>
+
+  <h2>When it feels hard</h2>
+  <div class="helper">
+    <div><b>Concern or control?</b><p>Write down what is worrying you, then split it into what you can control (how many sessions you do this week, asking Mr Hussain a question) and what you can't (which questions come up). Put your energy into the first list.</p></div>
+    <div><b>Box breathing</b><p>Breathe in for 4, hold for 4, breathe out for 4, hold for 4. Do it four times. It works in the exam too.</p></div>
+    <div><b>The dip is normal</b><p>Scores often drop for a while when a topic gets harder. That is part of learning, not a sign you can't do it. Look at the sessions you have done on My progress and keep going.</p></div>
+    <div><b>Talk to someone</b><p>If you feel overwhelmed, talk to someone you trust at home or tell Mr Hussain. You can also call Childline free on 0800 1111, any time. If you are in danger, call 999.</p></div>
+  </div>
+</section>
+
+<!-- EXAM FAVOURITES -->
+<section class="panel" id="p-exam" role="tabpanel" aria-labelledby="tab-exam" hidden>
+  <h1>Exam favourites</h1>
+  <p class="lede" style="margin-top:10px">These question types appear in most years, so they are some of the most reliable marks on each paper. They are in the same order as your Timeline. The answers use the wording from real AQA GCSE Chemistry mark schemes, and each one shows where it comes from. The green box shows what gets the marks and the amber box shows what to watch out for.</p>
+  <div class="btnrow" style="margin-top:6px">
+    <button class="btn" type="button" data-jump="fav-p1">Paper 1</button>
+    <button class="btn" type="button" data-jump="fav-p2">Paper 2</button>
+    <button class="btn" type="button" data-jump="fav-six">Six-mark answers</button>
+    <button class="btn" type="button" data-jump="fav-rp">Required practicals</button>
+    <button class="btn" type="button" data-jump="fav-maths">Maths</button>
+    <button class="btn" type="button" data-jump="fav-draw">Drawing</button>
+    <button class="btn" type="button" data-jump="fav-ws">Working scientifically</button>
+    <button class="btn" type="button" data-jump="fav-marks">Where the marks go</button>
+  </div>
+  <h2 id="fav-p1">Paper 1</h2>
+  <div id="favs1"></div>
+  <h2 id="fav-p2">Paper 2</h2>
+  <div id="favs2"></div>
+
+  <h2 id="fav-six">Six-mark answers</h2>
+  <p class="lede">Six-mark questions are marked in levels. Each type has its own top-level description in the mark scheme, so plan your answer to match it. From 2018 to 2025, the six-markers that came up most were life cycle assessment (four times) and potable water (three times), then making salts, cells, explaining properties from structure and bonding, and ion tests (twice each).</p>
+  <div class="six">
+    <div class="blk"><b>Describe a method or plan</b><div class="lvl">Top level: "The method would lead to the production of a valid outcome. The key steps are identified and logically sequenced."</div>Write numbered steps in the order you would do them. Name the equipment and amounts, say what you measure and how, and finish with repeating and how you use the results. Making salts, titrations, temperature changes, rates, chromatography and identifying ions all come up this way.</div>
+    <div class="blk"><b>Explain</b><div class="lvl">Top level: "Relevant points (reasons / causes) are identified, given in detail and logically linked to form a clear account."</div>Build chains with "because" and "so", for example: higher temperature, so particles have more energy, so more frequent successful collisions, so a higher rate.</div>
+    <div class="blk"><b>Evaluate or justify</b><div class="lvl">Top level: "A judgement, strongly linked and logically supported by a sufficient range of correct reasons, is given."</div>Give points for both options, use numbers from the table, link each point to an effect, then finish with a judgement that follows from your reasons. Life cycle assessments, choosing materials and choosing fertilisers come up this way.</div>
+    <div class="blk"><b>Compare</b><div class="lvl">Top level: "Scientifically relevant features are identified; the way(s) in which they are similar / different is made clear."</div>Write about both things in every sentence, using words like "both", "whereas" and "higher than", and include numbers when they are given.</div>
+  </div>
+
+  <h2 id="fav-rp">The eight required practicals</h2>
+  <p class="lede">Questions about the required practicals made up about 16% of the marks on the Higher papers from 2018 to 2025, and electrolysis, titration and identifying ions carried the most. Watch the videos in your required practicals guide first, because the questions assume you have seen the equipment. Then learn the method, the variables and how to make the results more accurate.</p>
+  <div class="tblwrap"><table>
+    <thead><tr><th>Practical</th><th>Paper</th><th>What they ask</th></tr></thead>
+    <tbody>
+      <tr><td><b>1. Making a pure, dry soluble salt</b><br><span class="small">insoluble oxide or carbonate + acid</span></td><td>1</td><td>Add the solid until it is in excess so all the acid reacts, filter, heat on a water bath to the point of crystallisation, leave to crystallise, pat dry.</td></tr>
+      <tr><td><b>2. Titration</b> <span class="co">CHEMISTRY ONLY</span><br><span class="small">strong acid and strong alkali</span></td><td>1</td><td>Pipette, conical flask, indicator, burette readings, white tile, swirl, dropwise near the end point, concordant results.</td></tr>
+      <tr><td><b>3. Electrolysis of aqueous solutions</b></td><td>1</td><td>Products at each electrode, inert electrodes, gas tests, collecting gases in measuring cylinders.</td></tr>
+      <tr><td><b>4. Temperature changes</b></td><td>1</td><td>Polystyrene cup and lid, stir, record the starting and highest temperature, same volume and concentration each time, repeat.</td></tr>
+      <tr><td><b>5. Rates of reaction</b><br><span class="small">gas volume or the disappearing cross</span></td><td>2</td><td>Independent, dependent and control variables. Gas syringe readings, why the cross end point is subjective.</td></tr>
+      <tr><td><b>6. Chromatography</b></td><td>2</td><td>Pencil start line, spots above the solvent, lid on, mark the solvent front, R<sub>f</sub> value.</td></tr>
+      <tr><td><b>7. Identifying ions</b> <span class="co">CHEMISTRY ONLY</span></td><td>2</td><td>Flame tests with a clean wire, sodium hydroxide for metal ions, acid and limewater for carbonates, silver nitrate for halides, barium chloride for sulfates.</td></tr>
+      <tr><td><b>8. Water analysis and purification</b></td><td>2</td><td>Test pH, heat to constant mass to find dissolved solids, distil to purify, pure water boils at 100 °C.</td></tr>
+    </tbody>
+  </table></div>
+  <p class="small" style="margin-top:8px">Practise them in the Required Practicals section of the <a href="https://mrhussain-chem.github.io/Chemistry-Final-Push/" target="_blank" rel="noopener">Final Push pack</a> and on <a href="https://www.physicsandmathstutor.com/chemistry-revision/gcse-aqa/practical-skills" target="_blank" rel="noopener">PMT practical skills</a>.</p>
+
+  <h2 id="fav-maths">Maths you will need</h2>
+  <p class="lede">Calculations come up on both papers, and the same methods are used every year. Show every step, because marks are given for correct working even when an earlier number is wrong.</p>
+  <div class="tblwrap"><table>
+    <thead><tr><th>Calculation</th><th>How</th></tr></thead>
+    <tbody>
+      <tr><td>Relative formula mass (M<sub>r</sub>)</td><td>Add up the relative atomic masses of every atom. Ca(OH)<sub>2</sub> = 40 + (16 + 1) × 2 = 74</td></tr>
+      <tr><td>Relative atomic mass from isotopes</td><td>(mass × % of each isotope, added together) ÷ 100. Lithium: (6 × 7.6 + 7 × 92.4) ÷ 100 = 6.9</td></tr>
+      <tr><td>Conservation of mass</td><td>Mass of reactants = mass of products. If a gas escapes, the mass seems to go down</td></tr>
+      <tr><td>Concentration in g/dm³</td><td>mass (g) ÷ volume (dm³). Change cm³ to dm³ by dividing by 1000</td></tr>
+      <tr><td>Uncertainty</td><td>mean ± half the range, for example 16.5 ± 0.3 °C</td></tr>
+      <tr><td>Percentage yield <span class="co">CHEMISTRY ONLY</span></td><td>mass of product made ÷ maximum theoretical mass × 100</td></tr>
+      <tr><td>Atom economy <span class="co">CHEMISTRY ONLY</span></td><td>M<sub>r</sub> of useful product ÷ total M<sub>r</sub> of all reactants × 100</td></tr>
+      <tr><td>Surface area to volume ratio <span class="co">CHEMISTRY ONLY</span></td><td>For a cube: (6 × side²) ÷ side³. When the side gets 10 times smaller, the ratio gets 10 times bigger</td></tr>
+      <tr><td>R<sub>f</sub> value</td><td>distance moved by spot ÷ distance moved by solvent. No units, always less than 1</td></tr>
+      <tr><td>Mean rate</td><td>quantity of reactant used or product formed ÷ time. Units such as g/s, cm³/s or mol/s</td></tr>
+      <tr><td>Moles <span class="ht">HIGHER TIER</span></td><td>moles = mass ÷ M<sub>r</sub>. One mole contains 6.02 × 10²³ particles</td></tr>
+      <tr><td>Reacting masses <span class="ht">HIGHER TIER</span></td><td>mass to moles, use the equation ratio, then moles to mass</td></tr>
+      <tr><td>Concentration in mol/dm³ <span class="ht">HIGHER TIER</span></td><td>moles = concentration × volume in dm³. Used in every titration calculation</td></tr>
+      <tr><td>Gas volumes <span class="ht">HIGHER TIER</span></td><td>volume (dm³) = moles × 24 at room temperature and pressure</td></tr>
+      <tr><td>Bond energies <span class="ht">HIGHER TIER</span></td><td>energy to break bonds minus energy released making bonds. A negative answer means exothermic</td></tr>
+      <tr><td>Gradient of a tangent <span class="ht">HIGHER TIER</span></td><td>Draw a tangent at the time asked, then change in y ÷ change in x</td></tr>
+      <tr><td>Balancing from masses <span class="ht">HIGHER TIER</span></td><td>Change each mass to moles, divide by the smallest, and use the whole-number ratio as the numbers in the equation</td></tr>
+      <tr><td>Percentage by mass of an element</td><td>(Aᵣ × number of atoms of that element) ÷ Mᵣ × 100. Iron in Fe₂O₃: 112 ÷ 160 × 100 = 70%</td></tr>
+      <tr><td>Mean</td><td>Add up the repeats, leaving out anomalous results, and divide by how many you used</td></tr>
+      <tr><td>Significant figures</td><td>Count from the first digit that is not zero: 0.004 70 has 3 significant figures. Give the number asked for, and only round at the end</td></tr>
+      <tr><td>Standard form</td><td>6.02 × 10²³ is 602 000 000 000 000 000 000 000. 0.000 25 = 2.5 × 10⁻⁴. Use the ×10ˣ button on your calculator</td></tr>
+      <tr><td>Rearranging</td><td>If moles = mass ÷ Mᵣ, then mass = moles × Mᵣ and Mᵣ = mass ÷ moles. Check by putting numbers back in</td></tr>
+      <tr><td>Changing units</td><td>cm³ ÷ 1000 = dm³. kg × 1000 = g. 1 tonne = 1 000 000 g. 1 nm = 1 × 10⁻⁹ m</td></tr>
+      <tr><td>Plotting a graph</td><td>Independent variable on the x axis. Label both axes with units, choose scales that use at least half the grid, plot with small crosses in pencil, then draw a line or smooth curve of best fit that ignores anomalous points</td></tr>
+    </tbody>
+  </table></div>
+
+  <h2 id="fav-draw">Drawing questions</h2>
+  <p class="lede">Some marks come from drawing. Use a sharp pencil and a ruler.</p>
+  <div class="tblwrap"><table>
+    <thead><tr><th>Drawing</th><th>What gets the marks</th></tr></thead>
+    <tbody>
+      <tr><td>Dot-and-cross: ionic</td><td>Show the electrons moving from the metal to the non-metal, then draw each ion in square brackets with its charge outside, top right, for example [Na]⁺</td></tr>
+      <tr><td>Dot-and-cross: covalent</td><td>Each bond is one shared pair: one dot and one cross where the atoms overlap. Include the non-bonding outer electrons, so each atom has a full outer shell</td></tr>
+      <tr><td>Electronic structure</td><td>Circles for shells, with 2, then 8, then 8 electrons for the first 20 elements, for example sodium 2,8,1</td></tr>
+      <tr><td>Displayed formula</td><td>Every atom and every bond as a line. Carbon makes 4 bonds, oxygen 2 and hydrogen 1. Alkenes have one C=C</td></tr>
+      <tr><td>Polymer repeating unit <span class="co">CHEMISTRY ONLY</span></td><td>Turn the C=C into C–C, put brackets round the unit with bonds going out through both brackets, and write n after it</td></tr>
+      <tr><td>Reaction profile</td><td>See Reaction profiles in Paper 1. Label the reactants, products, activation energy and overall energy change</td></tr>
+      <tr><td>Tangent <span class="ht">HIGHER TIER</span></td><td>A straight line with a ruler that touches the curve at the time asked, with a large triangle under it to read the change in y and change in x</td></tr>
+    </tbody>
+  </table></div>
+
+  <h2 id="fav-ws">Working scientifically</h2>
+  <p class="lede">In a classroom you would pick up these words while doing experiments. They are tested on both papers, often in the practical questions, so learn the exact meanings. Watch: <a href="https://cognito.org/courses/gcse/chemistry-triple/aqa/higher/notes/ZnRNY0xTaXM/12.2-accuracy-precision-error" target="_blank" rel="noopener">Accuracy, precision and error</a> · <a href="https://cognito.org/courses/gcse/chemistry-triple/aqa/higher/notes/eVRsbVd6T2c/12.3-evaluating-improving-a-method" target="_blank" rel="noopener">Evaluating and improving a method</a> · <a href="https://cognito.org/courses/gcse/chemistry-triple/aqa/higher/notes/Q0l6ZWdaYUw/12.4-reading-graphs-drawing-conclusions" target="_blank" rel="noopener">Reading graphs and drawing conclusions</a> · <a href="https://cognito.org/courses/gcse/chemistry-triple/aqa/higher/notes/YXZaQlF6Wk8/12.5-correlation-cause" target="_blank" rel="noopener">Correlation and cause</a></p>
+  <div class="tblwrap"><table>
+    <thead><tr><th>Word</th><th>Meaning</th></tr></thead>
+    <tbody>
+      <tr><td>Hypothesis</td><td>An idea that explains an observation and can be tested</td></tr>
+      <tr><td>Independent variable</td><td>The one you change</td></tr>
+      <tr><td>Dependent variable</td><td>The one you measure</td></tr>
+      <tr><td>Control variable</td><td>One you keep the same. Name it exactly, for example "the same volume of acid", not "the same amounts"</td></tr>
+      <tr><td>Categoric and continuous</td><td>Categoric variables are names, such as the type of metal (plot a bar chart). Continuous variables are numbers, such as temperature (plot a line graph)</td></tr>
+      <tr><td>Accurate</td><td>Close to the true value</td></tr>
+      <tr><td>Precise</td><td>Repeated readings are close to each other</td></tr>
+      <tr><td>Repeatable</td><td>The same person, using the same method and equipment, gets similar results</td></tr>
+      <tr><td>Reproducible</td><td>Someone else, or a different method or equipment, gets similar results</td></tr>
+      <tr><td>Resolution</td><td>The smallest change a measuring instrument can show</td></tr>
+      <tr><td>Range</td><td>From the smallest to the largest reading. For uncertainty, use half of (largest − smallest)</td></tr>
+      <tr><td>Uncertainty</td><td>How far the true value could be from your result: mean ± half the range</td></tr>
+      <tr><td>Random error</td><td>Readings scatter unpredictably above and below the true value. Repeating and taking a mean reduces its effect</td></tr>
+      <tr><td>Systematic error</td><td>Every reading is out by the same amount in the same direction, for example a balance that reads 0.2 g with nothing on it (a zero error). Repeating does not fix it</td></tr>
+      <tr><td>Anomalous result</td><td>A result that doesn't fit the pattern. Leave it out of the mean and the line of best fit, and repeat that reading if you can</td></tr>
+      <tr><td>Valid</td><td>The method really tests what it is meant to, with only the independent variable changing</td></tr>
+      <tr><td>Hazard, risk and precaution</td><td>A hazard could cause harm (acid is corrosive). The risk is the chance of harm. A precaution reduces the risk (wear eye protection)</td></tr>
+      <tr><td>Correlation</td><td>Two variables change together. That alone does not prove one causes the other</td></tr>
+      <tr><td>Peer review</td><td>Other scientists check work before it is published</td></tr>
+    </tbody>
+  </table></div>
+  <p class="small" style="margin-top:8px"><b>Questions you will see:</b> Why repeat and calculate a mean? (To reduce the effect of random errors and to spot anomalous results.) How could the method be improved? (Name one specific change and say why it helps, for example a lid on the cup reduces energy lost to the surroundings.) What can you conclude? (Describe the pattern, and quote numbers from the graph or table.)</p>
+
+  <h2 id="fav-marks">Where the marks go</h2>
+  <p class="lede">Every AQA GCSE Chemistry Higher paper from 2018 to 2025 has been analysed mark by mark: sixteen papers and 1,594 marks. This is how they split by topic, so you know where your time pays off most.</p>
+  <div class="tblwrap"><table>
+    <thead><tr><th>Topic</th><th>Share of marks</th></tr></thead>
+    <tbody>
+      <tr><td>4 Chemical changes</td><td class="num">14%</td></tr>
+      <tr><td>10 Using resources</td><td class="num">12%</td></tr>
+      <tr><td>3 Quantitative chemistry</td><td class="num">12%</td></tr>
+      <tr><td>6 Rates and equilibrium</td><td class="num">11%</td></tr>
+      <tr><td>7 Organic chemistry</td><td class="num">10%</td></tr>
+      <tr><td>1 Atomic structure and the periodic table</td><td class="num">10%</td></tr>
+      <tr><td>2 Bonding, structure and properties</td><td class="num">9%</td></tr>
+      <tr><td>5 Energy changes</td><td class="num">9%</td></tr>
+      <tr><td>8 Chemical analysis</td><td class="num">8%</td></tr>
+      <tr><td>9 The atmosphere</td><td class="num">5%</td></tr>
+    </tbody>
+  </table></div>
+  <p class="small" style="margin-top:8px"><b>Worth the most marks over those years:</b> rate calculations and tangents, exothermic and endothermic reactions, chromatography, electrolysis of solutions, titrations and titration calculations, factors affecting rate, making salts, gas volumes, life cycle assessment, potable water, the model of the atom, the Haber process, bond energies, Group 7 and cells. Gas volume calculations came up in 10 of the 16 papers, and equilibrium, rate calculations and titrations in 8 each.</p>
+</section>
+
+<!-- MY PROGRESS -->
+<section class="panel" id="p-progress" role="tabpanel" aria-labelledby="tab-progress" hidden>
+  <h1>My progress</h1>
+  <p class="lede" style="margin-top:10px">This page brings together your Checklist and the marks you have saved, so you can see where your next marks will come from. Everything saves on this device, so use the same device each time, and send your summary to Mr Hussain regularly.</p>
+  <div class="thisweek" id="focus"></div>
+
+  <h2>Sessions done</h2>
+  <p class="lede">Each time you finish a 30-minute session, tap the button. Sessions are what you can control, and they are what turn into marks.</p>
+  <button class="btn" type="button" id="sess-add">I've done a session</button>
+  <button class="btn sm" type="button" id="sess-undo" style="margin-left:6px">Undo the last one</button>
+  <p id="sess-now" aria-live="polite" style="margin-top:10px"></p>
+  <div class="weeks-log" id="sess-weeks"></div>
+
+  <h2>Topic by topic</h2>
+  <p class="small">Got it: Checklist statements at Got it. Try it and Papers: marks you got out of marks available. Lost: marks lost so far. Score: your overall percentage.</p>
+  <div class="tblwrap"><table class="prog">
+    <thead><tr><th>Topic</th><th>Got it</th><th>Try it</th><th>Papers</th><th>Lost</th><th>Score</th></tr></thead>
+    <tbody id="prog-table"></tbody>
+  </table></div>
+
+  <h2>Log a past-paper question</h2>
+  <p class="lede">After you mark a past-paper question, add it here so it counts towards your topic totals.</p>
+  <form id="log-form" class="logform">
+    <label for="log-what">Question<input id="log-what" type="text" placeholder="For example, June 2023 Paper 1 Q5"></label>
+    <label for="log-topic">Topic<select id="log-topic"></select></label>
+    <div class="pair">
+      <label for="log-got">Marks I got<input id="log-got" type="number" min="0" inputmode="numeric"></label>
+      <label for="log-out">Out of<input id="log-out" type="number" min="1" inputmode="numeric"></label>
+    </div>
+    <button class="btn" type="submit">Save this question</button>
+    <p class="small" id="log-msg" aria-live="polite"></p>
+  </form>
+  <div id="log-list"></div>
+
+  <h2>Send your progress to Mr Hussain</h2>
+  <p class="lede">Copy a short summary of your progress and paste it into an email.</p>
+  <button class="btn" type="button" id="copy-sum">Copy my progress summary</button>
+  <p class="small" id="copy-msg" aria-live="polite"></p>
+  <textarea id="sum-box" rows="8" hidden readonly aria-label="Progress summary"></textarea>
+</section>
+</main>
+
+<script>
+(function(){
+var L = {
+  fc9:'https://mrhussain-chem.github.io/Fundamental-Chemistry-Y9/',
+  fc10:'https://mrhussain-chem.github.io/Y10-Fundamental-Chem/',
+  fc11:'https://mrhussain-chem.github.io/Y11-Fundamental-Chem/',
+  ko9:'https://mrhussain-chem.github.io/Y9-Knowledge-/',
+  ko10:'https://mrhussain-chem.github.io/Y10-Knowledge-Organiser/',
+  quiz10:'https://mrhussain-chem.github.io/Y10-Chem-Quiz/',
+  push:'https://mrhussain-chem.github.io/Chemistry-Final-Push/',
+  mock:'https://mrhussain-chem.github.io/Y11-COMB-Mock-Revision/',
+  pmt:'https://www.physicsandmathstutor.com/chemistry-revision/gcse-aqa/',
+  papers:'https://www.physicsandmathstutor.com/past-papers/gcse-chemistry/',
+  cog:'https://cognito.org/courses/gcse/chemistry-ed2-triple/aqa/higher/lessons'
+};
+
+/* Cognito video lessons: code -> [id, slug, title] */
+var COGB="https://cognito.org/courses/gcse/chemistry-triple/aqa/higher/notes/";
+var COG={"1.2": ["TXRmZW1jY2M", "1.2-isotopes-relative-atomic-mass", "Isotopes and relative atomic mass"], "1.3": ["T3dKVFlOTE4", "1.3-chemical-formulae", "Chemical formulae"], "1.4": ["T2pCRmZTc3A", "1.4-elements-compounds-mixtures", "Elements, compounds and mixtures"], "1.5": ["YUxsdUFXanQ", "1.5-chemical-equations", "Chemical equations"], "1.6": ["dmNWdnR2dVI", "1.6-filtration-crystallisation", "Filtration and crystallisation"], "1.7": ["WXV5b09SY2U", "1.7-distillation", "Distillation"], "1.8": ["c1RncVBUa3I", "1.8-development-of-the-atomic-model", "Development of the atomic model"], "1.9": ["Rm5XUUdoVWE", "1.9-electronic-structure", "Electronic structure"], "1.10": ["WHZhSWdzemE", "1.10-development-of-the-periodic-table", "Development of the periodic table"], "1.11": ["TXdtTG9PbWM", "1.11-the-modern-periodic-table", "The modern periodic table"], "1.12": ["b1J0aUNSSVA", "1.12-metals-non-metals", "Metals and non-metals"], "1.13": ["Q3lRa3hSdHM", "1.13-group-1-the-alkali-metals", "Group 1, the alkali metals"], "1.14": ["R2FES3R6VnU", "1.14-group-7-the-halogens", "Group 7, the halogens"], "1.15": ["RHZpb0tYZk0", "1.15-group-0-the-noble-gases", "Group 0, the noble gases"], "1.16": ["ZllHdWVvVk0", "1.16-transition-metals", "Transition metals"], "2.2": ["dUFDakZ0WFk", "2.2-formation-of-ions", "Formation of ions"], "2.3": ["ZnlpSnlKRUI", "2.3-ionic-bonding", "Ionic bonding"], "2.4": ["SERBbmhhZ3U", "2.4-ionic-compounds", "Ionic compounds"], "2.5": ["VU1wbGRQd1M", "2.5-covalent-bonding", "Covalent bonding"], "2.6": ["bnduY1ByeFI", "2.6-simple-giant-covalent-structures", "Simple and giant covalent structures"], "2.7": ["YkNodHlrdmE", "2.7-metallic-bonding-alloys", "Metallic bonding and alloys"], "2.8": ["U0FnaGFpcm4", "2.8-diamond-graphite", "Diamond and graphite"], "2.9": ["SEx2dEZURXU", "2.9-graphene-fullerenes", "Graphene and fullerenes"], "2.10": ["RW16dEhXRGE", "2.10-nanoparticles", "Nanoparticles"], "3.2": ["aXNVZVNla3E", "3.2-relative-formula-mass", "Relative formula mass"], "3.3": ["cGRMelFkdHg", "3.3-the-mole", "The mole"], "3.4": ["ZG1OUXlOaGk", "3.4-reacting-mass-calculations", "Reacting mass calculations"], "3.5": ["cWZwTWlBeFQ", "3.5-limiting-reactants", "Limiting reactants"], "3.6": ["RnppVVFrZW8", "3.6-concentration-of-solutions", "Concentration of solutions"], "3.7": ["d2JuaHd6Z1Q", "3.7-percentage-yield", "Percentage yield"], "3.8": ["aXhuS3JWTU4", "3.8-atom-economy", "Atom economy"], "3.9": ["QXZmenVtR3g", "3.9-gas-volume-calculations", "Gas volume calculations"], "4.2": ["SFFJQXZCaUE", "4.2-redox", "Redox"], "4.3": ["YW1PcE9lVE0", "4.3-extracting-metals-from-their-ores", "Extracting metals from their ores"], "4.4": ["S09VS2xSVUI", "4.4-ionic-half-equations", "Ionic and half equations"], "4.5": ["TVVZYVVZVGI", "4.5-acids-bases-the-ph-scale", "Acids, bases and the pH scale"], "4.6": ["R01vYkV1aEk", "4.6-titrations", "Titrations"], "4.7": ["TVVCV3FMTmI", "4.7-titration-calculations", "Titration calculations"], "4.8": ["cVB4Y2VySkY", "4.8-strong-weak-acids", "Strong and weak acids"], "4.9": ["Q05rQm1DVWs", "4.9-reactions-of-acids", "Reactions of acids"], "4.10": ["VFFyd0tXdkg", "4.10-making-soluble-salts", "Making soluble salts"], "4.11": ["eFhMWG1vaWk", "4.11-electrolysis-molten-compounds", "Electrolysis of molten compounds"], "4.12": ["U2JOV3ZWV1U", "4.12-extracting-aluminium-by-electrolysis", "Extracting aluminium by electrolysis"], "4.13": ["YUhsdUJCSUk", "4.13-electrolysis-aqueous-solutions", "Electrolysis of aqueous solutions"], "5.2": ["TGNqZGRhbHo", "5.2-bond-energy-calculations", "Bond energy calculations"], "5.3": ["WUVNVU9abWI", "5.3-cells-batteries", "Cells and batteries"], "5.4": ["eUJ0cWtrVG0", "5.4-fuel-cells", "Fuel cells"], "6.2": ["eEVkeFNvT1c", "6.2-calculating-rate-from-graphs", "Calculating rate from graphs"], "6.3": ["b1VGUVNwSW0", "6.3-rate-factors-collision-theory", "Rate factors and collision theory"], "6.4": ["QW5jamtlTnA", "6.4-reversible-reactions-equilibrium", "Reversible reactions and equilibrium"], "6.5": ["cmNCcXRrU0I", "6.5-changing-the-position-of-equilibrium", "Changing the position of equilibrium"], "7.2": ["a3dNdm5Nb2o", "7.2-fractional-distillation-of-crude-oil", "Fractional distillation of crude oil"], "7.3": ["WUlNRnNEcEE", "7.3-alkane-properties-combustion", "Alkane properties and combustion"], "7.4": ["b0hrdlVtbU4", "7.4-cracking", "Cracking"], "7.5": ["aUdmTVlacXo", "7.5-reactions-of-alkenes", "Reactions of alkenes"], "7.6": ["eHNVcXd5b3Y", "7.6-addition-polymers", "Addition polymers"], "7.7": ["d0d2WFhWakM", "7.7-alcohols", "Alcohols"], "7.8": ["VE11bEFDZnI", "7.8-carboxylic-acids", "Carboxylic acids"], "7.9": ["UVdNRUZFZng", "7.9-esters", "Esters"], "7.10": ["bWFLTURTRWg", "7.10-condensation-polymers", "Condensation polymers"], "7.11": ["V1RzRGNCcUo", "7.11-naturally-occurring-polymers", "Naturally occurring polymers"], "8.2": ["eURiTmJNeHk", "8.2-chromatography-rf-values", "Chromatography and Rf values"], "8.3": ["bU5wSmtOY0E", "8.3-tests-for-gases", "Tests for gases"], "8.4": ["UUlPVXllaE8", "8.4-tests-for-cations", "Tests for positive ions"], "8.5": ["QW9WSlhZQ3g", "8.5-tests-for-anions", "Tests for negative ions"], "8.6": ["aEFWbnlHaE8", "8.6-instrumental-methods-of-analysis", "Instrumental methods"], "9.2": ["R3dHS09tSHk", "9.2-greenhouse-gases-climate-change", "Greenhouse gases and climate change"], "9.3": ["VHRnbFR6REE", "9.3-carbon-footprints", "Carbon footprints"], "9.4": ["Zk9EQ0tQUUQ", "9.4-air-pollution", "Air pollution"], "10.2": ["TmliRmtEVEQ", "10.2-potable-water", "Potable water"], "10.3": ["R2N5T1dNWW4", "10.3-waste-water-treatment", "Waste water treatment"], "10.4": ["RXlqZ1NRcEw", "10.4-evaluating-extraction-methods", "Phytomining and bioleaching"], "10.5": ["QXBqb3RuZWM", "10.5-life-cycle-assessments", "Life cycle assessments"], "10.6": ["ZlJHRWxXbEk", "10.6-reuse-recycling", "Reuse and recycling"], "10.7": ["T0dUWGVPSkc", "10.7-corrosion-rusting", "Corrosion and rusting"], "10.8": ["a1laaEh0R0w", "10.8-ceramics-polymers-composites", "Ceramics, polymers and composites"], "10.9": ["emFYemt0TXg", "10.9-comparing-materials-choosing-one", "Comparing materials"], "10.10": ["ZU1QaFp0alY", "10.10-the-haber-process", "The Haber process"], "10.11": ["Y1pUSXJodkc", "10.11-fertilisers-their-production", "Fertilisers"], "12.2": ["ZnRNY0xTaXM", "12.2-accuracy-precision-error", "Accuracy, precision and error"], "12.3": ["eVRsbVd6T2c", "12.3-evaluating-improving-a-method", "Evaluating and improving a method"], "12.4": ["Q0l6ZWdaYUw", "12.4-reading-graphs-drawing-conclusions", "Reading graphs and drawing conclusions"], "12.5": ["YXZaQlF6Wk8", "12.5-correlation-cause", "Correlation and cause"]};
+var TVID={"1": ["1.2", "1.3", "1.4", "1.5", "1.6", "1.7", "1.8", "1.9", "1.10", "1.11", "1.12", "1.13", "1.14", "1.15", "1.16"], "2": ["2.2", "2.3", "2.4", "2.5", "2.6", "2.7", "2.8", "2.9", "2.10"], "3": ["3.2", "3.3", "3.4", "3.5", "3.6", "3.7", "3.8", "3.9"], "4": ["4.2", "4.3", "4.4", "4.5", "4.6", "4.7", "4.8", "4.9", "4.10", "4.11", "4.12", "4.13"], "5": ["5.2", "5.3", "5.4"], "6": ["6.2", "6.3", "6.4", "6.5"], "7": ["7.2", "7.3", "7.4", "7.5", "7.6", "7.7", "7.8", "7.9", "7.10", "7.11"], "8": ["8.2", "8.3", "8.4", "8.5", "8.6"], "9": ["9.2", "9.3", "9.4"], "10": ["10.2", "10.3", "10.4", "10.5", "10.6", "10.7", "10.8", "10.9", "10.10", "10.11"]};
+function vlink(c){var v=COG[c];return v?'<a href="'+COGB+v[0]+'/'+v[1]+'" target="_blank" rel="noopener">'+v[2]+'</a>':'';}
+function watchLinks(list){if(!list||!list.length)return '';return '<p class="watch"><span class="label">Watch</span> '+list.map(vlink).join(' · ')+'</p>';}
+/* examiner traps: [what loses the mark, what gets it] */
+var TRAPS={"1": [["Isotopes are elements with the same number of protons.", "Isotopes are atoms of the same element with the same number of protons but different numbers of neutrons. \"Different relative atomic mass\" is not accepted in the definition."], ["The mass number is the mass of the protons and neutrons.", "The mass number is the total number of protons and neutrons. It is a count, not a mass."], ["Potassium is more reactive because it has more outer shells.", "An atom has only one outer shell. Potassium has more shells, so its outer electron is further from the nucleus, less strongly attracted, and lost more easily."], ["Chlorine is more reactive than bromine because it loses electrons more easily.", "Halogens react by gaining an electron. Chlorine has fewer shells, so the electron it gains is more strongly attracted to the nucleus."], ["Argon is unreactive because it wants to keep its full outer shell.", "Atoms do not want anything. Argon has a full outer shell, so it does not easily gain, lose or share electrons."], ["All the alpha particles went straight through the gold.", "Most went straight through, so the atom is mostly empty space. A few were deflected, so the mass and positive charge are in a tiny nucleus."]], "2": [["When water boils, the covalent bonds break.", "No covalent bonds break when a simple molecular substance melts or boils. The weak intermolecular forces between the molecules are overcome. \"Weak covalent bonds\" is also marked wrong."], ["2CO₂ has two C=O bonds.", "2CO₂ means two molecules, and each molecule has two C=O bonds, so there are four C=O bonds. A molecule is a group of atoms bonded together: count the molecules first, then the bonds in each one."], ["Molten sodium chloride conducts because the electrons can move.", "Ionic compounds have no delocalised electrons. When molten or dissolved, the ions are free to move and carry the charge."], ["Ionic bonding is when atoms share electrons.", "In ionic bonding, metal atoms lose electrons and non-metal atoms gain them. The oppositely charged ions are held by strong electrostatic forces in all directions. Any mention of sharing limits the marks."], ["When a solid is heated, the particles get bigger.", "The particles stay the same size. They gain energy and move more, which overcomes the forces between them. When a substance cools, the particles slow down and move closer together."], ["Alloys are harder because the bonds are stronger.", "Atoms of different sizes distort the layers, so the layers cannot slide over each other as easily."]], "3": [["Concentration = 0.0050 ÷ 25.0", "Change cm³ to dm³ first: 25.0 cm³ = 0.0250 dm³. This is the step that is missed most often in concentration questions."], ["Rounding each step as you go.", "Keep the full calculator value until the final answer, then round to the number of significant figures asked for. Rounding too early loses the last mark."], ["The uncertainty is the whole range.", "The uncertainty is half the range: mean ± half the range."], ["Volume of hydrogen = (0.40 ÷ 1) × 24", "Hydrogen gas is H₂, so use Mᵣ = 2. The same goes for O₂, N₂ and Cl₂."], ["The mass went down because the solid evaporated.", "Name the gas that escaped, for example carbon dioxide from a carbonate. If the mass goes up, say oxygen from the air was added."], ["Atom economy is the mass of product made compared with what was expected.", "That is percentage yield. Atom economy comes from the balanced equation: Mᵣ of the useful product ÷ total Mᵣ of all reactants × 100."]], "4": [["A weak acid has a low concentration.", "That is a dilute acid. A weak acid is only partially ionised in aqueous solution. Keep strength and concentration separate."], ["Cryolite is a catalyst.", "Cryolite is mixed with aluminium oxide because the mixture has a lower melting point, so less energy is needed."], ["The positive electrodes are replaced because they melt.", "The carbon positive electrodes react with the oxygen made there, forming carbon dioxide, so they wear away."], ["Sodium ions are more reactive than hydrogen ions.", "Compare the elements: sodium is more reactive than hydrogen, so hydrogen is produced at the negative electrode."], ["Iron is reduced, because it is the metal that is made.", "The substance reduced is the reactant that loses oxygen (or gains electrons): iron oxide."], ["Observation: hydrogen gas is produced.", "That is a conclusion. An observation is what you see, hear or feel: bubbles, the metal getting smaller, the tube getting warm."], ["Heat the salt solution until all the water has gone.", "Heating to dryness only gets 1 mark. Heat to the point of crystallisation, then leave it to crystallise."]], "5": [["Activation energy is the energy from zero up to the peak.", "The activation energy arrow starts at the reactants line and goes up to the peak of the curve."], ["Melting ice is an endothermic reaction.", "Melting and evaporating are physical changes, not reactions. An endothermic reaction example: citric acid with sodium hydrogencarbonate, or thermal decomposition."], ["In an exothermic reaction the reaction mixture takes in heat.", "Exothermic means energy is transferred to the surroundings, so the temperature of the surroundings increases."], ["Bonds broken in 2H₂ + O₂: one H–H and one O=O.", "Count every molecule: two H₂ molecules means two H–H bonds. Use the numbers in front of each formula."]], "6": [["There are more collisions.", "There are more frequent collisions (more collisions per second). \"More collisions\" on its own is not credited."], ["Measure the amount of gas.", "Name a quantity you can measure: the volume of gas, or the mass. \"Amount\" gets no mark."], ["A catalyst speeds up the forward reaction, so the yield goes up.", "A catalyst speeds up the forward and reverse reactions equally. It does not change the position of equilibrium or the yield."], ["At equilibrium, the reaction has stopped.", "Both reactions are still happening, at the same rate, so the amounts stay the same."], ["The rate doubles for every 10 °C rise.", "That rule is not part of GCSE and does not earn the explanation marks. Say the rate increases, because the particles have more energy, so more collisions have energy equal to or greater than the activation energy, and collisions are more frequent."], ["Rate at 30 s = total volume ÷ total time.", "That is the mean rate. The rate at one time needs a tangent at that time: change in y ÷ change in x from the tangent."], ["In a gas syringe experiment, time is the dependent variable.", "Time is the independent variable (x axis) and the volume of gas is the dependent variable (y axis). Time is only the dependent variable when it is what you measure, as in the disappearing cross."]], "7": [["Fractional distillation breaks large molecules into smaller ones.", "That is cracking. Fractional distillation separates crude oil into fractions by boiling point."], ["Bromine water turns clear with an alkene.", "It turns from orange to colourless. \"Clear\" is not accepted."], ["C₁₀H₂₂ → C₈H₁₈ + C₂H₂", "Cracking makes ethene, C₂H₄: C₁₀H₂₂ → C₈H₁₈ + C₂H₄. Check every equation balances."], ["Ethene burns: C₂H₄ + 3O₂ → 2CO₂ + 3H₂O", "Count the hydrogens: C₂H₄ + 3O₂ → 2CO₂ + 2H₂O."], ["A condensation polymer is made from one type of monomer with a double bond.", "That is an addition polymer. Condensation polymers form from monomers with two functional groups, and a small molecule such as water is lost each time a link forms."]], "8": [["Hydrogen relights a glowing splint.", "Hydrogen: a burning splint gives a pop. Oxygen: a glowing splint relights. Swapping them scores zero."], ["The start line is drawn in pencil so it can be rubbed out.", "Pencil is used because ink would dissolve in the solvent and move up the paper."], ["The ink did not move because it was too heavy.", "It did not move because it is insoluble in that solvent."], ["Measure to the top of the spot.", "Measure from the start line to the centre of the spot."], ["Add sulfuric acid then barium chloride to test for sulfate.", "Use hydrochloric acid. Sulfuric acid contains sulfate ions, so it would give a white precipitate anyway."], ["A pure substance has nothing added to it.", "In chemistry, a pure substance is a single element or compound, with a specific melting and boiling point."]], "9": [["Sulfur dioxide comes from burning the sulfur dioxide in fuels.", "Some fuels contain sulfur as an impurity. When the fuel burns, the sulfur is oxidised to sulfur dioxide."], ["Crude oil formed from compressed carbon dioxide.", "Crude oil formed over millions of years from the remains of plankton buried in mud. Coal formed from plant remains."], ["The greenhouse effect is caused by the hole in the ozone layer.", "Short wavelength radiation from the Sun reaches the Earth. The Earth emits longer wavelength radiation, which greenhouse gases absorb, so the temperature rises."], ["Unable to write the formula of carbon monoxide or sulfur dioxide.", "Learn these: N₂, O₂, CO, CO₂, SO₂, H₂O, CH₄. Without them you cannot balance a pollution equation."]], "10": [["In the Haber process, hydrogen comes from the air.", "Nitrogen comes from the air. Hydrogen comes from natural gas."], ["Potable water is pure water.", "Potable water is safe to drink, but it still contains dissolved substances, so it is not pure."], ["Heating to constant mass means repeating to make it reliable.", "Heat, cool and weigh, and repeat until the mass stops changing. That shows all the water has gone."], ["Evaluate: the paper bag uses 1.7 MJ and the plastic bag uses 1.5 MJ.", "Listing data stays at the bottom level. Compare the numbers, link each to an effect, and finish with a judgement and a reason."], ["Iron rusts when it gets wet.", "Iron needs both oxygen (air) and water to rust."]]};
+/* misconception quick checks (Batch 1). Correct option is index 0; shown shuffled */
+var QC=[{"n": 1, "ht": 0, "q": "Chlorine-35 and chlorine-37 are isotopes. Which statement is correct?", "o": [["They are atoms of the same element with the same number of protons but different numbers of neutrons", ""], ["They are different elements with the same number of protons", "Isotopes are the same element. Examiners do not credit \"elements with the same number of protons\": the atoms must be of the same element."], ["They have the same number of neutrons but different numbers of protons", "This is the wrong way round. A different number of protons would make a different element."], ["Chlorine-37 is unstable, so it must be radioactive", "Isotopes are not all unstable. Both of these chlorine isotopes are stable."]], "e": "Isotopes are atoms of the same element. They have the same number of protons (the atomic number) but different numbers of neutrons, so their mass numbers differ."}, {"n": 1, "ht": 0, "q": "What is the mass number of an atom?", "a": "The total number of protons and neutrons in the nucleus of the atom.", "err": "Writing \"the mass of the protons and neutrons\". The mass number is a count, not a mass, and it is not the same as relative atomic mass."}, {"n": 1, "ht": 0, "q": "A sample of gallium contains 60% gallium-69 and 40% gallium-71. What is the relative atomic mass of gallium in this sample?", "o": [["69.8", ""], ["70.0", "This is the simple mean of 69 and 71. The isotopes are not equally common, so you need the weighted mean."], ["49.9", "This comes from dividing by 140, the sum of the mass numbers. Divide by 100, the total of the percentages. An answer outside 69 to 71 cannot be right."], ["70.2", "The percentages have been matched to the wrong isotopes. The lighter isotope is more common, so the answer is closer to 69."]], "e": "(60 × 69 + 40 × 71) ÷ 100 = (4140 + 2840) ÷ 100 = 69.8"}, {"n": 1, "ht": 0, "q": "How can you check that a relative atomic mass you have calculated from isotopes is sensible?", "o": [["It must lie between the smallest and largest isotope masses, and closer to the more common isotope", ""], ["It must be a whole number", "Relative atomic masses are averages, so they are often not whole numbers."], ["It must be less than the smallest isotope mass", "A weighted mean always lies between the smallest and largest isotope masses."]], "e": "A weighted mean always lies between the isotope masses, nearer to the more common one."}, {"n": 1, "ht": 0, "q": "Which statement describes the plum pudding model of the atom?", "o": [["A ball of positive charge with negative electrons embedded in it", ""], ["A ball of positive energy with electrons on its surface", "The ball was positive charge, not energy, and the electrons were spread through it, not on the surface."], ["A small positive nucleus with electrons in shells around it", "This describes the later nuclear model with Bohr's shells, not the plum pudding model."], ["Protons and electrons mixed together in a ball", "Protons had not been discovered when the plum pudding model was suggested. The positive part was a continuous ball of charge."]], "e": "In the plum pudding model, the atom is a ball of positive charge with negative electrons embedded in it, so the atom has no overall charge."}, {"n": 1, "ht": 0, "q": "In the alpha particle scattering experiment, most alpha particles passed straight through a thin sheet of gold. What does this result show?", "o": [["Most of the atom is empty space", ""], ["The nucleus is positively charged", "That conclusion comes from the few particles that were deflected or bounced back, not from the ones that went straight through."], ["The gold sheet had small holes in it", "The gold sheet was continuous. The particles passed through the atoms themselves."], ["Gold atoms have no electrons", "Electrons have very little mass, so they do not deflect alpha particles. The result says nothing about whether electrons are there."]], "e": "If most alpha particles pass straight through, there is nothing in their way for most of the atom. The mass and positive charge must be concentrated in a tiny nucleus."}, {"n": 1, "ht": 0, "q": "Argon is very unreactive. Which statement explains why?", "o": [["Argon atoms have a full outer shell, so they do not easily gain, lose or share electrons", ""], ["Argon atoms have no outer electrons", "Argon has eight outer electrons. Its outer shell is full, not empty."], ["Argon atoms want to keep their full outer shell", "Atoms do not want anything. Explain in terms of electrons: a full outer shell means argon does not easily gain, lose or share electrons."], ["Argon is a gas, so it cannot form bonds", "Being a gas does not stop a substance reacting: chlorine and oxygen are gases and are very reactive."]], "e": "Noble gas atoms have a stable arrangement of electrons, a full outer shell. They do not easily gain, lose or share electrons, so they rarely react."}, {"n": 1, "ht": 0, "q": "Potassium is more reactive than sodium. Which statement explains why?", "o": [["The outer electron of potassium is further from the nucleus, so it is less strongly attracted and is lost more easily", ""], ["Potassium has more outer shells", "An atom has only one outer shell. Say potassium has more shells, so its outer electron is further from the nucleus."], ["Potassium has more electrons in its outer shell", "Both sodium and potassium have one electron in their outer shell. That is why they are both in Group 1."], ["The outer electron of potassium is held by weaker intermolecular forces", "Intermolecular forces act between molecules. The outer electron is held by the electrostatic attraction of the positive nucleus."]], "e": "Going down Group 1, atoms have more shells. The outer electron is further from the nucleus, so it is less strongly attracted and is lost more easily."}, {"n": 1, "ht": 0, "q": "Which force holds the outer electron in an atom?", "o": [["Electrostatic attraction to the positive nucleus", ""], ["Magnetic attraction to the nucleus", "The attraction is between opposite charges, which is electrostatic, not magnetic."], ["Covalent bonding to the other electrons", "Electrons in an atom are not bonded to each other. They are attracted to the nucleus."]], "e": "The negative electron is attracted to the positive nucleus by electrostatic attraction."}, {"n": 1, "ht": 0, "q": "Chlorine is more reactive than bromine. Which statement explains why?", "o": [["Chlorine atoms have fewer shells, so an electron is attracted more strongly to the nucleus and is gained more easily", ""], ["Chlorine atoms lose their outer electrons more easily", "Halogens react by gaining an electron, not losing one. Losing electrons is how metals react."], ["Chlorine atoms have more electrons in their outer shell", "All halogens have seven outer electrons."], ["Chlorine molecules are smaller, so the forces between them are weaker", "Weaker forces between molecules explain chlorine's lower boiling point, not its reactivity."]], "e": "Reactivity decreases down Group 7. A chlorine atom is smaller, so the electron it gains enters a shell closer to the nucleus and is more strongly attracted."}, {"n": 1, "ht": 0, "q": "Describe how the boiling points of the halogens change going down Group 7.", "a": "The boiling points increase going down the group.", "err": "Saying they decrease, by mixing this up with Group 1, where melting points decrease down the group."}, {"n": 1, "ht": 0, "q": "A sodium atom, Na, can become a sodium ion, Na⁺. Which statement is correct?", "o": [["Energy is needed to remove the outer electron from a sodium atom", ""], ["A sodium atom gives away its outer electron on its own because it wants a full outer shell", "Atoms do not want anything, and removing an electron always takes energy. Sodium forms ions when it reacts with something such as chlorine, and the reaction as a whole releases energy."], ["A sodium ion has the same number of protons and electrons", "A sodium ion has 11 protons but only 10 electrons. That is why it has a 1+ charge."], ["A sodium ion has one fewer proton than a sodium atom", "The number of protons never changes when an ion forms. An electron is lost, not a proton."]], "e": "Removing the outer electron from a sodium atom needs energy. Sodium ions form during reactions, and it is the whole reaction, including the attraction between the new ions, that releases energy."}, {"n": 3, "ht": 0, "q": "Silver nitrate solution is added to sodium chloride solution in a sealed flask. A white precipitate forms. What happens to the total mass of the flask and its contents?", "o": [["It stays the same", ""], ["It increases, because a solid has formed", "A solid is not heavier than the solutions it came from. The same atoms are there before and after; they have just been rearranged."], ["It decreases, because the reactants are used up", "Reactants being used up does not destroy their atoms. The atoms end up in the products."], ["It decreases, because a gas is given off", "No gas is made in this reaction, and in a sealed flask a gas could not escape anyway."]], "e": "No atoms are made or destroyed in a chemical reaction. In a sealed flask nothing can enter or leave, so the total mass stays the same."}, {"n": 3, "ht": 0, "q": "Which statement best explains why mass is conserved in a reaction?", "o": [["Atoms are rearranged into new substances, but none are made or destroyed", ""], ["The precipitate has the same mass as one of the reactants", "The precipitate contains atoms from both solutions. It is the total mass that is conserved, not the mass of one substance."], ["Sealing the flask stops the reaction changing anything", "The reaction still happens and new substances form. Sealing only stops anything entering or leaving."]], "e": "Atoms are rearranged, never made or destroyed, so the total mass of the products equals the total mass of the reactants."}, {"n": 3, "ht": 0, "q": "Zinc carbonate is heated in an open crucible. The mass of the solid goes down. Why?", "o": [["Carbon dioxide is made and escapes into the air", ""], ["The zinc carbonate evaporates", "Zinc carbonate does not evaporate. It decomposes into zinc oxide and carbon dioxide, and the gas escapes."], ["Mass is destroyed when a substance is heated", "Mass is never destroyed. It seems to disappear only because a product escapes."], ["Hydrogen is made and escapes into the air", "There is no hydrogen in zinc carbonate. Check the formula before you name the gas."]], "e": "ZnCO₃(s) → ZnO(s) + CO₂(g). Carbon dioxide gas leaves the open crucible, so the mass of solid left goes down."}, {"n": 3, "ht": 0, "q": "Magnesium ribbon is heated in a crucible. The lid is lifted from time to time. The mass of the solid increases. Why?", "o": [["Magnesium combines with oxygen from the air, and the oxygen adds mass", ""], ["Mass is conserved, so the increase must be a measuring error", "Mass is conserved for everything in the reaction. Oxygen from the air is a reactant, and its mass is now in the magnesium oxide."], ["Magnesium oxide is denser than magnesium", "This mixes up mass and density. The mass goes up because oxygen atoms have been added."], ["The magnesium expands when it is heated", "Expanding changes volume, not mass."]], "e": "2Mg(s) + O₂(g) → 2MgO(s). Oxygen from the air is a reactant, so the product weighs more than the magnesium alone."}, {"n": 3, "ht": 0, "q": "Calculate the percentage by mass of iron in iron(III) oxide, Fe₂O₃. (Aᵣ: Fe = 56, O = 16)", "o": [["70.0%", ""], ["35.0%", "This counts only one iron atom. There are two iron atoms in Fe₂O₃, so the mass of iron is 2 × 56 = 112."], ["30.0%", "This is the percentage of oxygen, not iron."], ["77.8%", "This uses the formula FeO. Check the formula you are given: Fe₂O₃ has Mᵣ 160."]], "e": "Mᵣ = (2 × 56) + (3 × 16) = 160. Percentage of iron = 112 ÷ 160 × 100 = 70.0%"}, {"n": 3, "ht": 0, "q": "A student measured a temperature rise three times: 12.4 °C, 12.9 °C and 13.0 °C. Which is the correct way to give the result?", "o": [["12.8 ± 0.3 °C", ""], ["12.8 ± 0.6 °C", "0.6 °C is the whole range. The uncertainty is half the range."], ["12.9 ± 0.3 °C", "12.9 °C is the median. Give the mean."], ["12.8 ± 0.1 °C", "The uncertainty comes from the spread of the results, not from the number of decimal places."]], "e": "Mean = (12.4 + 12.9 + 13.0) ÷ 3 = 12.77, so 12.8 °C. Range = 13.0 − 12.4 = 0.6 °C, so the uncertainty is ± 0.3 °C."}, {"n": 3, "ht": 1, "q": "How many molecules are there in 0.25 mol of water? The Avogadro constant is 6.02 × 10²³ per mole.", "o": [["1.51 × 10²³", ""], ["2.41 × 10²⁴", "This divides the Avogadro constant by 0.25. Multiply the number of moles by the Avogadro constant."], ["6.02 × 10²³", "That is the number in one whole mole. You have a quarter of a mole."], ["4.5", "This is the mass in grams (0.25 × 18), not the number of molecules."]], "e": "Number of molecules = moles × Avogadro constant = 0.25 × 6.02 × 10²³ = 1.51 × 10²³"}, {"n": 3, "ht": 1, "q": "2Mg + O₂ → 2MgO. Calculate the mass of magnesium oxide made from 6.0 g of magnesium. (Aᵣ: Mg = 24, O = 16)", "o": [["10.0 g", ""], ["20.0 g", "The 2 in front of both Mg and MgO means the mole ratio is 1 : 1. Do not double the answer."], ["5.0 g", "The mole ratio of Mg to MgO is 1 : 1, so there is no halving."], ["6.0 g, because mass is conserved", "The total mass of all reactants equals the total mass of all products. Oxygen is a reactant too, so the oxide is heavier than the magnesium."]], "e": "Moles of Mg = 6.0 ÷ 24 = 0.25 mol. The ratio Mg : MgO is 2 : 2, so 0.25 mol of MgO forms. Mass = 0.25 × 40 = 10.0 g"}, {"n": 3, "ht": 1, "q": "6.5 g of zinc is added to a solution containing 0.050 mol of hydrochloric acid. Zn + 2HCl → ZnCl₂ + H₂ (Aᵣ: Zn = 65). Which is the limiting reactant?", "o": [["Hydrochloric acid, because 0.10 mol of zinc would need 0.20 mol of acid", ""], ["Zinc, because it is the solid", "Being a solid does not make a reactant limiting. Compare the moles you have with the moles needed."], ["Zinc, because 6.5 is bigger than 0.050", "This compares a mass with a number of moles. Convert the mass of zinc to moles first: 6.5 ÷ 65 = 0.10 mol."], ["Neither, because both reactants are used up", "Only one reactant is completely used up. Zinc is left over, because there is not enough acid."]], "e": "Moles of Zn = 6.5 ÷ 65 = 0.10 mol, which needs 0.20 mol of HCl. Only 0.050 mol of acid is present, so the acid is used up first and limits the amount of product."}, {"n": 3, "ht": 0, "q": "Which statement about atom economy is correct?", "o": [["It is the percentage of the total mass of reactants that ends up in the useful product, worked out from the balanced equation", ""], ["It compares the mass of product actually made with the mass expected", "That is percentage yield. Atom economy comes from the equation, before any experiment."], ["It can be increased by leaving the reaction to run for longer", "Atom economy is fixed by the equation. Changing how the reaction is run can change the yield, not the atom economy."], ["It is always 100% if the reaction goes to completion", "Any reaction with more than one product has an atom economy below 100%, however complete it is."]], "e": "Atom economy = Mᵣ of the desired product ÷ total Mᵣ of all reactants × 100. Only a reaction with a single product has 100% atom economy."}, {"n": 3, "ht": 1, "q": "25.0 cm³ of sodium hydroxide solution is neutralised by 20.0 cm³ of hydrochloric acid of concentration 0.150 mol/dm³. NaOH + HCl → NaCl + H₂O. Calculate the concentration of the sodium hydroxide solution.", "o": [["0.120 mol/dm³", ""], ["0.188 mol/dm³", "The volumes are the wrong way round. Moles of acid = concentration × its own volume; then divide by the volume of the alkali."], ["120 mol/dm³", "One volume was changed to dm³ and the other was not. Change both cm³ values to dm³ by dividing by 1000."], ["0.00300 mol/dm³", "This is the number of moles, not the concentration. Divide the moles by the volume of sodium hydroxide in dm³."]], "e": "Moles of HCl = 0.150 × (20.0 ÷ 1000) = 0.00300 mol. The ratio is 1 : 1, so moles of NaOH = 0.00300 mol. Concentration = 0.00300 ÷ (25.0 ÷ 1000) = 0.120 mol/dm³"}, {"n": 3, "ht": 1, "q": "Calculate the volume of 0.40 g of hydrogen gas, H₂, at room temperature and pressure. (Aᵣ: H = 1. One mole of any gas occupies 24 dm³ at room temperature and pressure.)", "o": [["4.8 dm³", ""], ["9.6 dm³", "Hydrogen gas is made of H₂ molecules, so use Mᵣ = 2, not Aᵣ = 1."], ["0.017 dm³", "This divides the mass by 24. Find the moles first (mass ÷ Mᵣ), then multiply by 24."], ["4800 dm³", "There is no need to multiply by 1000. 4.8 dm³ is the same as 4800 cm³, so check your units."]], "e": "Moles of H₂ = 0.40 ÷ 2 = 0.20 mol. Volume = 0.20 × 24 = 4.8 dm³"}, {"n": 4, "ht": 0, "q": "Iron is extracted by heating iron(III) oxide with carbon. 2Fe₂O₃ + 3C → 4Fe + 3CO₂. Which substance is reduced?", "o": [["Iron(III) oxide, because it loses oxygen", ""], ["Iron, because it is the metal that is made", "Iron is a product. Ask which reactant loses oxygen."], ["Carbon, because it is the reducing agent", "The reducing agent is the substance that removes oxygen, so it is oxidised itself."], ["Carbon dioxide, because it contains oxygen", "Carbon gaining oxygen to make carbon dioxide is oxidation, not reduction."]], "e": "Reduction is the loss of oxygen. Iron(III) oxide loses oxygen to become iron, so iron(III) oxide is reduced. Carbon gains oxygen, so carbon is oxidised."}, {"n": 4, "ht": 0, "q": "Why is aluminium extracted by electrolysis and not by heating aluminium oxide with carbon?", "o": [["Aluminium is more reactive than carbon, so carbon cannot remove the oxygen from aluminium oxide", ""], ["Carbon is more reactive than aluminium, so it would react with the aluminium", "It is the other way round. Carbon can only reduce oxides of metals less reactive than carbon."], ["Electrolysis is cheaper than heating with carbon", "Electrolysis is expensive because it needs a lot of electrical energy. It is used because carbon will not work."], ["Aluminium oxide does not contain oxygen", "Aluminium oxide is a compound of aluminium and oxygen. The problem is removing that oxygen."]], "e": "Metals more reactive than carbon cannot be extracted by reduction with carbon, so electrolysis is used, even though it needs a lot of energy."}, {"n": 4, "ht": 1, "q": "Magnesium reacts with copper ions in solution. Mg + Cu²⁺ → Mg²⁺ + Cu. Which statement is correct?", "o": [["Magnesium atoms are oxidised because they lose electrons", ""], ["Copper ions are oxidised because they gain electrons", "Gaining electrons is reduction. Remember OIL RIG: oxidation is loss, reduction is gain."], ["Magnesium is reduced because its charge goes up", "A charge that goes up means electrons were lost, which is oxidation."], ["Nothing is oxidised, because there is no oxygen in the equation", "Oxidation is not only gaining oxygen. At Higher tier, oxidation is the loss of electrons."]], "e": "Each magnesium atom loses two electrons to become a Mg²⁺ ion, so magnesium is oxidised. Each copper ion gains two electrons to become a copper atom, so copper ions are reduced."}, {"n": 4, "ht": 1, "q": "In Mg + Cu²⁺ → Mg²⁺ + Cu, which half equation shows the oxidation?", "o": [["Mg → Mg²⁺ + 2e⁻", ""], ["Mg + 2e⁻ → Mg²⁺", "The charges do not balance: when an atom becomes a positive ion, the electrons appear on the right."], ["Cu²⁺ + 2e⁻ → Cu", "This is a correct half equation, but it shows reduction: electrons are gained."]], "e": "Oxidation is loss of electrons, so the electrons appear on the right-hand side."}, {"n": 4, "ht": 0, "q": "Which ion makes a solution alkaline?", "o": [["OH⁻", ""], ["H⁺", "Hydrogen ions make solutions acidic."], ["Na⁺", "Sodium ions are in sodium hydroxide, but they do not make it alkaline. Potassium hydroxide is alkaline too."], ["O²⁻", "Oxide ions are found in solid oxides. In solution, alkalis contain hydroxide ions."]], "e": "Alkalis produce hydroxide ions, OH⁻, in aqueous solution. Acids produce hydrogen ions, H⁺."}, {"n": 4, "ht": 0, "q": "A student makes copper sulfate crystals from copper oxide and dilute sulfuric acid. Why does the student add copper oxide until some is left over?", "o": [["So that all the acid reacts, and the leftover solid can be filtered off", ""], ["So that more crystals form from the extra copper oxide", "The extra copper oxide does not react. The amount of salt is fixed by the amount of acid."], ["So that the copper oxide acts as a catalyst", "Copper oxide is a reactant here, not a catalyst."], ["So that the solution turns alkaline", "Copper oxide is insoluble, so excess copper oxide does not make the solution alkaline. It sinks and is filtered off."]], "e": "Adding the insoluble base in excess makes sure all the acid is used up. The excess is easy to remove by filtering, leaving only salt solution."}, {"n": 4, "ht": 0, "q": "After filtering, how should the student get crystals from the copper sulfate solution?", "o": [["Heat it gently, for example in a water bath, until crystals start to form, then leave it to cool", ""], ["Heat it until all the water has gone", "Heating to dryness gives a powder, not crystals, and can decompose the salt."], ["Filter it and collect the crystals on the filter paper", "There are no crystals yet. Filtering removes the excess copper oxide before crystallising."]], "e": "Heat to the point of crystallisation, then leave the solution to cool and crystallise."}, {"n": 4, "ht": 0, "q": "Zinc is added to dilute hydrochloric acid. Which of these is an observation?", "o": [["Bubbles form and the zinc gets smaller", ""], ["Hydrogen gas is produced", "You cannot see that the gas is hydrogen. That is a conclusion. An observation is what you see, hear, feel or smell."], ["Zinc chloride is made", "You cannot see zinc chloride forming in the solution. That is a deduction from the equation."], ["The reaction is exothermic", "This is a conclusion. The observation is that the tube feels warm or the temperature rises."]], "e": "Observations are what you can see, hear, feel or measure: fizzing, the metal disappearing, the temperature rising. Naming the products is a conclusion."}, {"n": 4, "ht": 1, "q": "Which statement describes a weak acid?", "o": [["An acid that is only partially ionised in aqueous solution", ""], ["An acid with a low concentration", "That describes a dilute acid. Strength is about how much the acid ionises; concentration is about how much acid is in a given volume."], ["An acid whose hydrogen ions are only partly ionised", "It is the acid molecules that ionise, releasing hydrogen ions. Hydrogen ions are already ions."], ["An acid with a pH above 7", "Every acid has a pH below 7. A pH above 7 is alkaline."]], "e": "A strong acid is completely ionised in aqueous solution. A weak acid, such as ethanoic acid, is only partially ionised."}, {"n": 4, "ht": 1, "q": "Ethanoic acid and hydrochloric acid both have a concentration of 1.0 mol/dm³. Which has the lower pH?", "o": [["Hydrochloric acid, because it is completely ionised, so the concentration of hydrogen ions is higher", ""], ["Ethanoic acid, because weak acids have lower pH values", "A weak acid releases fewer hydrogen ions, so its pH is higher, not lower."], ["Neither, because the concentrations are the same", "Same concentration does not mean same pH. The stronger acid releases more hydrogen ions."]], "e": "The strong acid is completely ionised, so it gives a higher concentration of H⁺ ions and a lower pH."}, {"n": 4, "ht": 1, "q": "A solution of an acid is diluted. Its pH changes from 2 to 4. How has the concentration of hydrogen ions changed?", "o": [["It has decreased by a factor of 100", ""], ["It has decreased by a factor of 2", "The pH scale is not linear. Each increase of one pH unit means the hydrogen ion concentration falls by a factor of 10."], ["It has increased by a factor of 100", "A higher pH means fewer hydrogen ions, not more."], ["It has decreased by a factor of 20", "Two pH units means 10 × 10 = 100, not 10 + 10."]], "e": "Each pH unit is a factor of 10 in hydrogen ion concentration. Going from pH 2 to pH 4 is two units, so the concentration falls by 10 × 10 = 100 times."}, {"n": 4, "ht": 0, "q": "Why does molten lead bromide conduct electricity when solid lead bromide does not?", "o": [["When molten, the ions are free to move and carry charge", ""], ["When molten, the electrons are free to move", "Ionic compounds do not have delocalised electrons. In a melt or solution, ions carry the charge."], ["Solid lead bromide does not contain ions", "The solid does contain ions, but they are held in fixed positions in the lattice, so they cannot move."], ["Melting turns the ionic bonds into metallic bonds", "Melting does not change the type of bonding. It frees the ions to move."]], "e": "In the solid, ions are held in place in a giant lattice. When the compound melts, the ions can move, so they can carry charge through the liquid."}, {"n": 4, "ht": 0, "q": "In the extraction of aluminium, aluminium oxide is mixed with cryolite. Why?", "o": [["The mixture melts at a lower temperature than aluminium oxide alone, so less energy is needed", ""], ["Cryolite is a catalyst that speeds up the electrolysis", "Cryolite is not a catalyst. Nearly two thirds of students scored nothing on this in one AQA exam, often for this answer."], ["Cryolite lowers the melting point of aluminium oxide", "Aluminium oxide still melts at the same temperature. It is the mixture that has the lower melting point."], ["Cryolite reacts with aluminium oxide to release aluminium", "Cryolite does not react to make aluminium. Aluminium is made by electrolysis at the negative electrode."]], "e": "A mixture of aluminium oxide and cryolite has a lower melting point than pure aluminium oxide. Less energy is needed to keep it molten, which reduces costs."}, {"n": 4, "ht": 0, "q": "When sodium chloride solution is electrolysed, hydrogen is produced at the negative electrode, not sodium. Why?", "o": [["Sodium is more reactive than hydrogen, so hydrogen ions from the water are discharged instead", ""], ["Sodium ions are more reactive than hydrogen ions", "Compare the reactivity of the elements, sodium and hydrogen, not their ions."], ["The solution does not contain sodium ions", "The solution does contain sodium ions. They stay in solution because sodium is more reactive than hydrogen."], ["Sodium is produced, but it escapes as a gas", "Sodium is a solid metal at room temperature, and it is not produced here at all."]], "e": "At the negative electrode, hydrogen is produced if the metal is more reactive than hydrogen. Sodium is more reactive than hydrogen, so hydrogen ions (from the water) gain electrons instead."}, {"n": 4, "ht": 1, "q": "Which half equation shows the reaction at the positive electrode during the electrolysis of molten aluminium oxide?", "o": [["2O²⁻ → O₂ + 4e⁻", ""], ["2O²⁻ + 4e⁻ → O₂", "Oxide ions lose electrons at the positive electrode, so the electrons go on the right."], ["2O²⁻ → O₂ + 2e⁻", "Count the charges: two oxide ions carry four negative charges, so four electrons are lost."], ["Al³⁺ + 3e⁻ → Al", "This is the reaction at the negative electrode."]], "e": "At the positive electrode, oxide ions are oxidised. Two oxide ions each lose two electrons, making one oxygen molecule: 2O²⁻ → O₂ + 4e⁻"}];
+function a(key,text){return '<a href="'+L[key]+'" target="_blank" rel="noopener">'+text+'</a>';}
+function pmt(slug,text){return '<a href="'+L.pmt+slug+'/" target="_blank" rel="noopener">'+text+'</a>';}
+
+var RES = [
+  ['cog','Cognito video lessons','A short video lesson with notes for every part of the course. Linked week by week on the Timeline and topic by topic on the Checklist.'],
+  ['fc9','Fundamental Chemistry Year 9','Topics 1, 3, 8, 9 and 10, with step-by-step learning and Higher Tier sections.'],
+  ['fc10','Fundamental Chemistry Year 10','Topics 2, 5 and 6, plus metals and extraction.'],
+  ['fc11','Fundamental Chemistry Year 11','Topics 3, 4 and 7: moles, acids, electrolysis and crude oil.'],
+  ['pmt','PMT AQA GCSE Chemistry','Notes, flashcards and topic questions for every topic, including all the CHEMISTRY ONLY content.'],
+  ['push','Chemistry Final Push pack','Weekly activities, exam questions and the required practicals.'],
+  ['mock','Mock Revision summary','Higher Tier calculations and mark scheme language. It was written for Combined Science, so use the Checklist for the CHEMISTRY ONLY content.'],
+  ['ko9','Year 9 Knowledge Organiser','Key facts for building summary sheets.'],
+  ['ko10','Year 10 Knowledge Organiser','Key facts for building summary sheets.'],
+  ['papers','PMT past papers','AQA GCSE Chemistry Higher papers and mark schemes for the timed papers in the final push.']
+];
+var rh='';
+RES.forEach(function(r){rh+='<div class="item">'+a(r[0],r[1])+'<p>'+r[2]+'</p></div>';});
+rh+='<div class="item"><b>Your required practicals guide</b><p>Mr Hussain shares this with you separately. It has a video of each practical being done, so watch those before you learn the methods.</p></div>';
+rh+='<div class="item"><b>Showbie</b><p>Extra lesson videos and resources. The class folders follow the class timetable, so use this plan\'s Timeline to decide what to work on each week.</p></div>';
+document.getElementById('resources').innerHTML=rh;
+
+/* items: [text, higherTier, bigWin, chemistryOnly] */
+var T = [
+ {n:1,paper:1,name:'Atomic structure and the periodic table',
+  learn:[a('fc9','Fundamental Chemistry Year 9')+': Atomic Structure tab',a('ko9','Year 9 Knowledge Organiser'),a('push','Final Push')+': Weeks 1 and 3',pmt('atomic-structure-and-periodic-table','PMT notes and flashcards, including transition metals')],
+  items:[
+   ['I can define atom, element, compound and mixture',0,0,0],
+   ['I can write word equations and balanced symbol equations with state symbols',0,1,0],
+   ['I can write ionic equations and half equations',1,0,0],
+   ['I can choose filtration, crystallisation, simple distillation, fractional distillation or chromatography to separate a mixture',0,0,0],
+   ['I can describe how the model of the atom changed: plum pudding, alpha scattering, nuclear model, Bohr\'s shells, Chadwick\'s neutron',0,1,0],
+   ['I know the relative charge and mass of protons, neutrons and electrons, and that an atom has a radius of about 0.1 nm',0,0,0],
+   ['I can work out protons, neutrons and electrons from atomic number and mass number',0,1,0],
+   ['I can define isotopes and calculate relative atomic mass from percentage abundance',0,1,0],
+   ['I can write the electronic structure of the first 20 elements, for example 2,8,1',0,1,0],
+   ['I can explain how the periodic table is arranged and why Mendeleev left gaps',0,0,0],
+   ['I can explain why Group 0 elements are unreactive and describe their boiling point trend',0,0,0],
+   ['I can describe Group 1 reactions with oxygen, chlorine and water, and explain the trend using the outer electron',0,1,0],
+   ['I can describe the Group 7 trend and displacement reactions, and explain the trend using the outer shell',0,1,0],
+   ['I can compare transition metals with Group 1: higher melting points and densities, stronger, harder, less reactive',0,0,1],
+   ['I know transition metals form ions with different charges, form coloured compounds and are useful catalysts',0,0,1]
+  ]},
+ {n:2,paper:1,name:'Bonding, structure and the properties of matter',
+  learn:[a('fc10','Fundamental Chemistry Year 10')+': Structure & Bonding and Metals tabs',a('ko10','Year 10 Knowledge Organiser'),a('push','Final Push')+': Week 2',pmt('bonding-structure-properties-of-matter','PMT notes and flashcards, including nanoparticles')],
+  items:[
+   ['I can explain ionic bonding and draw dot-and-cross diagrams with charges, such as NaCl and MgO',0,1,0],
+   ['I can work out the formula of an ionic compound from the charges on its ions',0,0,0],
+   ['I can explain the properties of ionic compounds: high melting point, conduct when molten or dissolved',0,1,0],
+   ['I can draw dot-and-cross diagrams for H₂, Cl₂, O₂, N₂, HCl, H₂O, NH₃ and CH₄',0,0,0],
+   ['I can explain why small molecules have low melting points and do not conduct (weak intermolecular forces)',0,1,0],
+   ['I can explain why polymers are solid at room temperature (stronger intermolecular forces between large molecules)',0,0,0],
+   ['I can describe diamond, graphite and silicon dioxide and link their structure to their properties',0,1,0],
+   ['I can describe graphene and fullerenes, including nanotubes, and their uses',0,0,0],
+   ['I can explain metallic bonding, why metals conduct and why alloys are harder',0,1,0],
+   ['I can use the particle model and state symbols (s), (l), (g), (aq)',0,0,0],
+   ['I can explain the limitations of the particle model',1,0,0],
+   ['I know nanoparticles are 1 to 100 nm and can calculate surface area to volume ratio',0,0,1],
+   ['I can describe uses of nanoparticles and explain possible risks',0,0,1]
+  ]},
+ {n:3,paper:1,name:'Quantitative chemistry',
+  learn:[a('fc11','Fundamental Chemistry Year 11')+': Quantitative Chemistry tab',a('fc9','Fundamental Chemistry Year 9')+': Quantitative Chemistry tab',a('push','Final Push')+': Weeks 3 and 4',a('mock','Mock Revision')+': Higher Tier calculations',pmt('quantitative-chemistry','PMT notes, flashcards and questions, including yield, atom economy and gas volumes')],
+  items:[
+   ['I can use conservation of mass, and explain mass changes when a gas is made or used',0,1,0],
+   ['I can calculate relative formula mass (Mr), including formulae with brackets',0,1,0],
+   ['I can calculate a mean and give the uncertainty using the range',0,0,0],
+   ['I can calculate concentration in g/dm³ and convert cm³ to dm³',0,1,0],
+   ['I can use moles = mass ÷ Mr and Avogadro\'s constant (6.02 × 10²³)',1,1,0],
+   ['I can calculate reacting masses from a balanced equation',1,1,0],
+   ['I can use masses to work out the balanced equation',1,0,0],
+   ['I can identify the limiting reactant',1,0,0],
+   ['I can calculate percentage yield and explain why it is less than 100%',0,1,1],
+   ['I can calculate atom economy and explain why a high atom economy is better',0,1,1],
+   ['I can calculate concentration in mol/dm³, including from titration results',1,1,1],
+   ['I can calculate gas volumes using 24 dm³ per mole',1,0,1]
+  ]},
+ {n:4,paper:1,name:'Chemical changes',
+  learn:[a('fc11','Fundamental Chemistry Year 11')+': Acids, Bases & Neutralisation and Electrolysis tabs',a('fc10','Fundamental Chemistry Year 10')+': Metals and Extraction of Metals tabs',a('push','Final Push')+': Weeks 5, 6 and 8',pmt('chemical-changes','PMT notes, flashcards and questions, including titrations')],
+  items:[
+   ['I can complete equations for acids with metals, alkalis, metal oxides, hydroxides and carbonates, and name the salts',0,1,0],
+   ['I can describe how to make a pure, dry soluble salt (required practical)',0,1,0],
+   ['I can describe how to carry out a titration (required practical)',0,1,1],
+   ['I can use the pH scale and write the ionic equation H⁺ + OH⁻ → H₂O',0,0,0],
+   ['I can explain strong and weak acids, and that a fall of 1 pH unit means 10 times more H⁺ ions',1,1,0],
+   ['I can explain why an ionic compound must be molten or dissolved for electrolysis',0,1,0],
+   ['I can predict the products of electrolysis of molten and aqueous compounds',0,1,0],
+   ['I can write half equations at each electrode',1,1,0],
+   ['I can describe the electrolysis of aqueous solutions (required practical)',0,0,0],
+   ['I can explain how aluminium is extracted, including cryolite and why the positive electrodes are replaced',0,0,0],
+   ['I can use the reactivity series (K, Na, Li, Ca, Mg, C, Zn, Fe, H, Cu) to predict displacement reactions',0,0,0],
+   ['I can explain extraction by reduction with carbon and by electrolysis',0,1,0],
+   ['I can explain oxidation and reduction in terms of electrons and write ionic equations for displacement',1,0,0]
+  ]},
+ {n:5,paper:1,name:'Energy changes',
+  learn:[a('fc10','Fundamental Chemistry Year 10')+': Energy Changes tab',a('ko10','Year 10 Knowledge Organiser'),a('push','Final Push')+': Required Practical 4',pmt('energy-changes','PMT notes, flashcards and questions, including cells and fuel cells')],
+  items:[
+   ['I can define exothermic and endothermic and give examples of each',0,1,0],
+   ['I can describe the temperature change practical (required practical)',0,1,0],
+   ['I can draw and label reaction profiles, including activation energy',0,1,0],
+   ['I can calculate energy changes using bond energies',1,1,0],
+   ['I can explain how a cell produces a voltage and the difference between rechargeable and non-rechargeable cells',0,0,1],
+   ['I can describe hydrogen fuel cells and evaluate them against rechargeable cells',0,0,1],
+   ['I can write the half equations for a hydrogen fuel cell',1,0,1]
+  ]},
+ {n:6,paper:2,name:'Rates of reaction and equilibrium',
+  learn:[a('fc10','Fundamental Chemistry Year 10')+': Rates of Reaction & Equilibrium tab',a('ko10','Year 10 Knowledge Organiser'),a('push','Final Push')+': Week 7 and Required Practical 3',pmt('rate-and-extent-of-chemical-change','PMT notes, flashcards and questions'),a('quiz10','Year 10 Summary Quiz')],
+  items:[
+   ['I can calculate mean rate from data or a graph, with units',0,1,0],
+   ['I can draw a tangent and calculate its gradient to find the rate at a given time',1,1,0],
+   ['I can say how each factor changes the rate, and explain it with more frequent successful collisions and activation energy',0,1,0],
+   ['I can explain how a catalyst works and show it on a reaction profile',0,1,0],
+   ['I can describe a rates practical and name its variables (required practical)',0,1,0],
+   ['I can describe reversible reactions and their energy changes, including hydrated copper sulfate',0,0,0],
+   ['I can explain equilibrium in a closed system',0,0,0],
+   ['I can predict and explain how changing concentration, temperature or pressure moves an equilibrium',1,1,0]
+  ]},
+ {n:7,paper:2,name:'Organic chemistry',
+  learn:[a('fc11','Fundamental Chemistry Year 11')+': Organic Chemistry tab',a('push','Final Push')+': Week 9',pmt('organic-chemistry','PMT notes, flashcards and questions, including alcohols, carboxylic acids and polymers')],
+  items:[
+   ['I know crude oil is a mixture of hydrocarbons, and can name and draw the first four alkanes (CₙH₂ₙ₊₂)',0,0,0],
+   ['I can describe fractional distillation of crude oil',0,1,0],
+   ['I can describe how boiling point, viscosity and flammability change with chain length',0,1,0],
+   ['I can write balanced equations for complete combustion',0,1,0],
+   ['I can describe cracking, balance cracking equations and explain why it is useful',0,1,0],
+   ['I can describe the bromine water test for alkenes',0,1,0],
+   ['I can name and draw the first four alkenes (CₙH₂ₙ) and describe their reactions with hydrogen, water, halogens and oxygen',0,0,1],
+   ['I can describe the first four alcohols, their reactions with sodium, air, water and oxidising agents, their uses, and fermentation',0,1,1],
+   ['I can describe the first four carboxylic acids, their reactions with carbonates and water, and how esters are made',0,0,1],
+   ['I can explain why carboxylic acids are weak acids',1,0,1],
+   ['I can draw addition polymers from their monomers and identify the repeating unit',0,1,1],
+   ['I can explain condensation polymerisation',1,0,1],
+   ['I can explain how amino acids form polypeptides and proteins',1,0,1],
+   ['I can describe DNA, proteins, starch and cellulose as natural polymers',0,0,1]
+  ]},
+ {n:8,paper:2,name:'Chemical analysis',
+  learn:[a('fc9','Fundamental Chemistry Year 9')+': Chemical Analysis tab',a('push','Final Push')+': Required Practical 5',pmt('chemical-analysis','PMT notes, flashcards and questions, including ion tests')],
+  items:[
+   ['I can describe the tests for hydrogen, oxygen, carbon dioxide and chlorine',0,1,0],
+   ['I can calculate Rf values and explain how chromatography separates substances',0,1,0],
+   ['I can describe paper chromatography (required practical)',0,1,0],
+   ['I can define a pure substance and a formulation',0,0,0],
+   ['I know the flame test colours for lithium, sodium, potassium, calcium and copper',0,1,1],
+   ['I know the precipitate colours with sodium hydroxide for Al³⁺, Ca²⁺, Mg²⁺, Cu²⁺, Fe²⁺ and Fe³⁺',0,1,1],
+   ['I can describe the tests for carbonate, halide and sulfate ions',0,1,1],
+   ['I can describe how to identify the ions in an unknown compound (required practical)',0,0,1],
+   ['I can describe flame emission spectroscopy and the advantages of instrumental methods',0,0,1]
+  ]},
+ {n:9,paper:2,name:'Chemistry of the atmosphere',
+  learn:[a('fc9','Fundamental Chemistry Year 9')+': Atmosphere & Greenhouse tab',a('ko9','Year 9 Knowledge Organiser'),pmt('chemistry-of-atmosphere','PMT notes, flashcards and questions')],
+  items:[
+   ['I know the composition of today\'s atmosphere (about four-fifths nitrogen, one-fifth oxygen)',0,0,0],
+   ['I can describe how the early atmosphere formed and how it changed over time',0,1,0],
+   ['I can explain the greenhouse effect using short and long wavelength radiation',0,1,0],
+   ['I can describe human activities that increase greenhouse gases and the effects of climate change',0,0,0],
+   ['I can describe carbon footprint and ways to reduce it',0,0,0],
+   ['I can describe pollutants from burning fuels and their effects',0,0,0]
+  ]},
+ {n:10,paper:2,name:'Using resources',
+  learn:[a('fc9','Fundamental Chemistry Year 9')+': Water & Resources and Recycling & LCA tabs',a('fc10','Fundamental Chemistry Year 10')+': Extraction of Metals tab',pmt('using-resources','PMT notes, flashcards and questions, including materials, Haber process and fertilisers')],
+  items:[
+   ['I can explain potable water, how it is produced and how sea water is desalinated',0,1,0],
+   ['I can describe water analysis and purification (required practical)',0,1,0],
+   ['I can describe how waste water and sewage are treated',0,0,0],
+   ['I can carry out and compare life cycle assessments',0,1,0],
+   ['I can explain finite and renewable resources, sustainable development and recycling',0,0,0],
+   ['I can describe phytomining and bioleaching',1,0,0],
+   ['I can explain rusting and how it is prevented, including sacrificial protection',0,0,1],
+   ['I can describe alloys: bronze, brass, gold carats, steels and aluminium alloys',0,0,1],
+   ['I can describe glass, ceramics, composites, LD and HD poly(ethene), and thermosoftening and thermosetting polymers',0,0,1],
+   ['I can describe the Haber process: raw materials, conditions, catalyst and recycling',0,1,1],
+   ['I can explain the Haber process conditions as a compromise between rate, yield and cost',1,1,1],
+   ['I can describe how NPK fertilisers are made from ammonia, acids, phosphate rock and potassium salts',0,0,1]
+  ]}
+];
+
+/* quick checks and examiner traps */
+var QKEY='fc-separate-qc-v1',QS={};
+try{QS=JSON.parse(localStorage.getItem(QKEY)||'{}')||{};}catch(e){QS={};}
+function saveQS(){try{localStorage.setItem(QKEY,JSON.stringify(QS));}catch(e){}}
+function order(len,seed){var o=[];for(var i=0;i<len;i++)o.push(i);for(var j=len-1;j>0;j--){seed=(seed*9301+49297)%233280;var k=Math.floor(seed/233280*(j+1));var t=o[j];o[j]=o[k];o[k]=t;}return o;}
+function esc(x){return String(x).replace(/&/g,'&amp;').replace(/</g,'&lt;');}
+function extrasHTML(n){
+  var h='',qs=[];
+  QC.forEach(function(q,i){if(q.n===n)qs.push(i);});
+  if(qs.length){
+    h+='<details class="qc"><summary>Quick checks ('+qs.length+' questions)</summary><div class="qcbody"><p class="small" style="margin:0">Each wrong answer is a mistake students really make. Say your answer out loud before you tap, then read the feedback, even when you are right.</p>';
+    qs.forEach(function(i){
+      var q=QC[i];
+      h+='<div class="qitem" data-qi="'+i+'"><p class="q">'+esc(q.q)+(q.ht?' <span class="ht">HIGHER TIER</span>':'')+'</p>';
+      if(q.o){
+        h+='<div class="qopts">'+order(q.o.length,i+7).map(function(k){return '<button type="button" class="qopt" data-qo="'+k+'">'+esc(q.o[k][0])+'</button>';}).join('')+'</div>';
+      }else{
+        h+='<div><button type="button" class="btn sm" data-qreveal="1">Say or write your answer, then show the answer</button></div>';
+      }
+      h+='<div class="qfb" role="status"></div></div>';
+    });
+    h+='</div></details>';
+  }
+  var tr=TRAPS[n]||[];
+  if(tr.length){
+    h+='<details class="qc"><summary>Examiner traps ('+tr.length+')</summary><div class="qcbody"><p class="small" style="margin:0">AQA examiners report these slips every year. Before you show the answer, say what is wrong with each one and what would get the mark.</p>';
+    tr.forEach(function(x,i){
+      h+='<div class="qitem trap"><p class="bad">'+esc(x[0])+'</p><div><button type="button" class="btn sm" data-trap="'+n+'-'+i+'">Show what gets the mark</button></div><div class="qfb" role="status"></div></div>';
+    });
+    h+='</div></details>';
+  }
+  return h;
+}
+document.getElementById('checklist').addEventListener('click',function(e){
+  var b=e.target.closest('.qopt,[data-qreveal],[data-trap]');if(!b)return;
+  var it=b.closest('.qitem'),fb=it.querySelector('.qfb');
+  if(b.hasAttribute('data-trap')){var p=b.getAttribute('data-trap').split('-');fb.className='qfb ok';fb.textContent=TRAPS[p[0]][+p[1]][1];b.parentNode.hidden=true;return;}
+  var i=+it.getAttribute('data-qi'),q=QC[i];
+  if(b.hasAttribute('data-qreveal')){fb.className='qfb ok';fb.innerHTML='<b>Answer:</b> '+esc(q.a)+'<br><b>Watch out:</b> '+esc(q.err);b.parentNode.hidden=true;return;}
+  var k=+b.getAttribute('data-qo');
+  if(!(i in QS)){QS[i]=k===0?1:0;saveQS();}
+  if(k===0){
+    [].forEach.call(it.querySelectorAll('.qopt'),function(x){x.disabled=true;});
+    b.classList.add('right');fb.className='qfb ok';fb.innerHTML='<b>Correct.</b> '+esc(q.e);
+  }else{
+    b.classList.add('wrong');b.disabled=true;fb.className='qfb no';fb.innerHTML='<b>Not yet.</b> '+esc(q.o[k][1])+' Have another go.';
+  }
+});
+function qcStats(){var a=0,r=0;Object.keys(QS).forEach(function(k){a++;r+=QS[k];});return [r,a];}
+
+var KEY='fc-separate-v1', S={};
+try{S=JSON.parse(localStorage.getItem(KEY)||'{}')||{};}catch(e){S={};}
+function save(){try{localStorage.setItem(KEY,JSON.stringify(S));}catch(e){}}
+var LABELS=['Not yet','Getting there','Got it'];
+
+function renderChecklist(){
+  var h='',paper=0;
+  T.forEach(function(t){
+    if(t.paper!==paper){paper=t.paper;h+='<h2>Paper '+paper+'</h2>';}
+    h+='<details class="topic" id="topic-'+t.n+'"><summary><h3>Topic '+t.n+': '+t.name+'</h3><span class="prog" id="prog-'+t.n+'"></span><div class="bar" id="bar-'+t.n+'"></div></summary><div class="tbody">';
+    h+='<div class="learn"><span class="label">Learn it here</span><ul><li><b>Watch:</b> Cognito video lessons: '+(TVID[t.n]||[]).map(vlink).join(' · ')+'</li>'+t.learn.map(function(x){return '<li>'+x+'</li>';}).join('')+'</ul></div><ul class="checks">';
+    var order=t.items.map(function(it,i){return i;}).sort(function(x,y){return (t.items[y][2]-t.items[x][2])||(x-y);});
+    order.forEach(function(i){
+      var it=t.items[i],id=t.n+'-'+i,s=S[id]||0;
+      h+='<li class="s'+s+'" data-id="'+id+'"><span class="t">'+it[0]+(it[2]?'<span class="win">BIG WIN</span>':'')+(it[3]?'<span class="co">CHEMISTRY ONLY</span>':'')+(it[1]?'<span class="ht">HIGHER TIER</span>':'')+'</span><button type="button" class="state" aria-label="Confidence: '+LABELS[s]+'. Tap to change">'+LABELS[s]+'</button></li>';
+    });
+    h+='</ul>'+extrasHTML(t.n)+'</div></details>';
+  });
+  document.getElementById('checklist').innerHTML=h;
+  updateProgress();
+}
+function counts(items,n){var g=0,am=0;items.forEach(function(_,i){var s=S[n+'-'+i]||0;if(s===2)g++;else if(s===1)am++;});return [g,am,items.length];}
+function bar(g,am,tot){return '<i class="g" style="width:'+(g/tot*100)+'%"></i><i class="a" style="width:'+(am/tot*100)+'%"></i>';}
+function updateProgress(){
+  var G=0,A=0,N=0,BW=0,BN=0;
+  T.forEach(function(t){var c=counts(t.items,t.n);G+=c[0];A+=c[1];N+=c[2];
+    t.items.forEach(function(it,i){if(it[2]){BN++;if((S[t.n+'-'+i]||0)===2)BW++;}});
+    var p=document.getElementById('prog-'+t.n);if(p)p.textContent='Got it '+c[0]+' of '+c[2];
+    var b=document.getElementById('bar-'+t.n);if(b)b.innerHTML=bar(c[0],c[1],c[2]);});
+  document.getElementById('overall').innerHTML='<div><b>Got it: '+G+' of '+N+' statements</b> <span class="small">· Getting there: '+A+' · BIG WIN statements at Got it: '+BW+' of '+BN+'</span></div><div class="bar">'+bar(G,A,N)+'</div><div class="key"><span style="--c:var(--green)">Got it</span><span style="--c:var(--amber)">Getting there</span><span style="--c:var(--line)">Not yet</span></div>';
+}
+document.getElementById('checklist').addEventListener('click',function(e){
+  var b=e.target.closest('.state');if(!b)return;
+  var li=b.closest('li'),id=li.getAttribute('data-id'),s=((S[id]||0)+1)%3;
+  S[id]=s;save();li.className='s'+s;b.textContent=LABELS[s];b.setAttribute('aria-label','Confidence: '+LABELS[s]+'. Tap to change');updateProgress();
+});
+var rb=document.getElementById('resetbox');
+rb.addEventListener('click',function(e){
+  if(e.target.id==='reset'){rb.innerHTML='<div class="confirm">This clears every tick on this device. <div class="btnrow" style="margin-top:8px"><button class="btn" type="button" id="reset-yes">Yes, clear them</button><button class="btn" type="button" id="reset-no">Keep my ticks</button></div></div>';}
+  else if(e.target.id==='reset-yes'){S={};save();renderChecklist();rb.innerHTML='<p class="small">Cleared.</p><button class="btn" id="reset" type="button">Clear all my ticks</button>';}
+  else if(e.target.id==='reset-no'){rb.innerHTML='<button class="btn" id="reset" type="button">Clear all my ticks</button>';}
+});
+
+/* timeline. k: w study week, h holiday, x exam. e: end date for longer holidays */
+var FAV=' Finish with this topic\'s Exam favourites.';
+var PHASES=[
+ {name:'Phase 1',title:'Paper 1: most common topics first',when:'November to January',weeks:[
+  {d:'2026-11-02',k:'w',five:true,v:['3.3','3.4','3.5'],f:'Moles and reacting masses',p:'Moles, Avogadro\'s constant, reacting masses from equations and limiting reactants. This builds on relative formula mass.'+FAV,t:[3]},
+  {d:'2026-11-09',k:'w',send:true,v:['4.5','4.9','4.8','4.10','4.6'],f:'Acids, salts and titrations',p:'Acid reactions, naming salts, strong and weak acids, the making salts practical and the titration practical.'+FAV,t:[4]},
+  {d:'2026-11-16',k:'w',five:true,v:['3.6','4.7','3.7','3.8','3.9'],f:'Concentration, yield and atom economy',p:'Concentration in mol/dm³, titration calculations, percentage yield, atom economy and gas volumes.'+FAV,t:[3]},
+  {d:'2026-11-23',k:'w',five:true,send:true,v:['4.11','4.13','4.4','4.12'],f:'Electrolysis',p:'What forms at each electrode, half equations, aluminium extraction and the electrolysis practical.'+FAV,t:[4]},
+  {d:'2026-11-30',k:'w',v:['4.2','4.3'],f:'Reactivity, extraction and redox',p:'The reactivity series, displacement, extraction with carbon, and oxidation and reduction in terms of electrons.'+FAV,t:[4]},
+  {d:'2026-12-07',k:'w',send:true,v:['2.2','2.3','2.4','2.5','2.7'],f:'Bonding',p:'Ionic, covalent and metallic bonding, dot-and-cross diagrams and ionic formulae.'+FAV,t:[2]},
+  {d:'2026-12-14',k:'w',v:['2.6','2.8','2.9','2.10'],f:'Structure, carbon and nanoparticles',p:'Properties of ionic compounds, small molecules, polymers, diamond, graphite, graphene, metals and alloys, plus nanoparticles.'+FAV,t:[2]},
+  {d:'2026-12-21',e:'2027-01-04',k:'h',send:true,f:'Christmas holiday: review and first timed practice',p:'Choose two topics from the term and rewrite their summary sheets from memory, and keep your flashcards going. Then do about 40 marks of PMT topic questions on Topics 3 and 4 with your notes closed, allowing two minutes a mark. Mark them using the steps in Marking your own work and send them to Mr Hussain.',t:[2,3,4]},
+  {d:'2027-01-04',k:'w',five:true,v:['5.2','5.3','5.4'],f:'Energy changes, cells and fuel cells',p:'Exothermic and endothermic reactions, reaction profiles, bond energies, the temperature practical, cells and fuel cells.'+FAV,t:[5]},
+  {d:'2027-01-11',k:'w',v:['1.2','1.8','1.9','1.10','1.13','1.14','1.15','1.16'],f:'The periodic table and transition metals',p:'Isotopes and the model of the atom, Groups 0, 1 and 7, and transition metals.'+FAV,t:[1]}
+ ]},
+ {name:'Phase 2',title:'Paper 2: most common topics first',when:'January to March',weeks:[
+  {d:'2027-01-18',k:'w',send:true,v:['6.2','6.3'],f:'Rates of reaction',p:'Rate graphs and tangents, collision theory, catalysts and the rates practical.'+FAV,t:[6]},
+  {d:'2027-01-25',k:'w',v:['8.2','8.3','8.4','8.5','8.6'],f:'Chromatography, gas tests and ion tests',p:'Rf values, the four gas tests, flame tests, metal hydroxides, tests for negative ions and instrumental methods.'+FAV,t:[8]},
+  {d:'2027-02-01',k:'w',send:true,v:['7.2','7.3','7.4','7.5'],f:'Crude oil, cracking and alkenes',p:'Fractional distillation, alkanes, combustion, cracking, the bromine water test and reactions of alkenes.'+FAV,t:[7]},
+  {d:'2027-02-08',k:'w',v:['7.7','7.8','7.9'],f:'Alcohols, carboxylic acids and esters',p:'The first four alcohols and carboxylic acids, their reactions, fermentation and making esters.'+FAV,t:[7]},
+  {d:'2027-02-15',k:'h',f:'February half term: review',p:'Choose two Paper 1 topics and rewrite their summary sheets from memory. Do one calculation from each.',t:[1,3,4,5]},
+  {d:'2027-02-22',k:'w',send:true,v:['7.6','7.10','7.11'],f:'Polymers, amino acids and DNA',p:'Addition and condensation polymers, amino acids and proteins, and natural polymers.'+FAV,t:[7]},
+  {d:'2027-03-01',k:'w',v:['6.4','6.5','10.10','10.11'],f:'Equilibrium, Haber process and fertilisers',p:'Reversible reactions, changing conditions, the Haber process compromise and NPK fertilisers.'+FAV,t:[6,10]},
+  {d:'2027-03-08',k:'w',send:true,v:['10.2','10.3','10.5','10.6','10.4'],f:'Water and life cycle assessment',p:'Potable water, desalination, waste water, the water practical, life cycle assessment and recycling.'+FAV,t:[10]},
+  {d:'2027-03-15',k:'w',v:['10.7','10.8','10.9'],f:'Corrosion, alloys and materials',p:'Rusting and its prevention, alloys, glass, ceramics, polymers and composites.'+FAV,t:[10]},
+  {d:'2027-03-22',k:'w',send:true,v:['9.2','9.3','9.4'],f:'The atmosphere',p:'How the atmosphere changed, greenhouse gases, climate change and pollutants.'+FAV,t:[9]},
+  {d:'2027-03-29',e:'2027-04-12',k:'h',send:true,f:'Easter holiday: first full paper',p:'Do one Paper 1 past paper with your notes closed, allowing up to 3 hours 30 minutes (two minutes a mark). Mark it using the steps in Marking your own work, redo the questions where you lost marks, and send it to Mr Hussain. If you are offered a practice exam at the centre where you will sit your real exams, take it: it makes the real day feel familiar.',t:[1,2,3,4,5]}
+ ]},
+ {name:'Phase 3',title:'Paper 1 final push',when:'April to May',weeks:[
+  {d:'2027-04-12',k:'w',f:'Atoms, bonding and structure',p:'Past-paper questions on Topics 1 and 2, and redo their Exam favourites.',t:[1,2]},
+  {d:'2027-04-19',k:'w',send:true,f:'Calculations',p:'Every calculation in the Maths table, two each session: moles, titrations, yield, atom economy, gas volumes and bond energies.',t:[3,5],maths:true},
+  {d:'2027-04-26',k:'w',f:'Acids, titrations and reactivity',p:'Past-paper questions on Topic 4, plus the making salts and titration practicals.',t:[4],rp:true},
+  {d:'2027-05-03',k:'w',send:true,f:'Electrolysis, energy and six-mark answers',p:'Past-paper questions on electrolysis and Topic 5, the electrolysis and temperature practicals, and two six-mark answers.',t:[4,5],rp:true},
+  {d:'2027-05-10',k:'w',f:'Ready for Paper 1',p:'One Paper 1 at real exam speed: 1 hour 45 minutes in one go, ideally with someone at home timing you. Flashcards every day, a read-through of each summary sheet, and check What you need on the day in How to revise.',t:[1,2,3,4,5]},
+  {d:'2027-05-17',k:'x',f:'Chemistry Paper 1',p:'Monday morning. Bring a calculator, pencil and ruler.',t:[]}
+ ]},
+ {name:'Phase 4',title:'Paper 2 final push',when:'May to June',weeks:[
+  {d:'2027-05-17',k:'w',f:'Rates, equilibrium and the Haber process',p:'From the day after Paper 1. Past-paper questions on Topic 6 and the Haber process, plus the rates practical.',t:[6,10],after:true,rp:true},
+  {d:'2027-05-24',k:'w',send:true,f:'Organic chemistry and analysis',p:'Past-paper questions on Topics 7 and 8, plus the chromatography and identifying ions practicals.',t:[7,8],rp:true},
+  {d:'2027-05-31',k:'h',send:true,f:'May half term: full paper',p:'The atmosphere, using resources and the water practical, then one Paper 2 past paper with your notes closed, allowing two minutes a mark. Mark it and send it to Mr Hussain.',t:[9,10]},
+  {d:'2027-06-07',k:'w',f:'Ready for Paper 2',p:'Redo any questions where you lost marks, then one more Paper 2 at real exam speed (1 hour 45 minutes). Go over Topics 1 to 3, which Paper 2 can also use.',t:[1,2,3,6,7,8,9,10]},
+  {d:'2027-06-15',k:'x',f:'Chemistry Paper 2',p:'Tuesday morning. Topics 6 to 10, plus ideas from Topics 1 to 3.',t:[]}
+ ]}
+];
+var MON=['Jan','Feb','Mar','Apr','May','Jun','Jul','Aug','Sep','Oct','Nov','Dec'];
+var DAY=['Sun','Mon','Tue','Wed','Thu','Fri','Sat'];
+function D(s){var p=s.split('-');return new Date(+p[0],+p[1]-1,+p[2]);}
+function fmt(d){return d.getDate()+' '+MON[d.getMonth()];}
+var today=new Date();today.setHours(0,0,0,0);
+var P1=D('2027-05-17'),P2=D('2027-06-15');
+function weekEnd(w){return w.e?D(w.e):new Date(D(w.d).getTime()+7*864e5);}
+function isNow(w){
+  var s=D(w.d);
+  if(w.k==='x')return +s===+today;
+  if(w.after){s=new Date(s.getTime()+864e5);}
+  if(w.d==='2027-05-10'){return today>=s&&today<P1;}
+  if(w.d==='2027-06-07'){return today>=s&&today<P2;}
+  return today>=s&&today<weekEnd(w);
+}
+var current=null;
+function tags(list){return list.map(function(n){return '<button type="button" class="tag" data-topic="'+n+'">Topic '+n+'</button>';}).join('');}
+function renderTimeline(){
+  var h='';
+  PHASES.forEach(function(ph){
+    h+='<div class="phase"><div class="phase-head"><span class="label">'+ph.name+'</span><h2 style="margin:0">'+ph.title+'</h2><span class="small">'+ph.when+'</span></div><ul class="weeks">';
+    ph.weeks.forEach(function(w){
+      var s=D(w.d),cls='week',now=isNow(w);
+      if(w.k==='h')cls+=' hol';
+      if(w.k==='x')cls+=' exam';
+      if(now){cls+=' now';current=w;}
+      else if(w.k!=='x'&&weekEnd(w)<=today)cls+=' past';
+      else if(w.k==='x'&&s<today)cls+=' past';
+      var when=w.k==='x'?(DAY[s.getDay()]+' '+fmt(s)+'<span>'+s.getFullYear()+'</span>'):((w.after?'18 '+MON[s.getMonth()]:fmt(s))+'<span>'+(w.k==='h'?'holiday':'week of')+'</span>');
+      h+='<li class="'+cls+'"'+(now?' id="nowrow"':'')+'><div class="when">'+when+'</div><div class="what"><b>'+w.f+'</b>'+(now?' <span class="tag now">This week</span>':'')+'<p>'+w.p+'</p>'+watchLinks(w.v);
+      var extra='';
+      if(w.five)extra+='<span class="tag plain">5 sessions</span>';
+      if(w.send)extra+='<button type="button" class="tag" data-go="send-work">Send work</button>';
+      if(w.rp)extra+='<button type="button" class="tag" data-go="fav-rp">Required practicals</button>';
+      if(w.maths)extra+='<button type="button" class="tag" data-go="fav-maths">Maths</button>';
+      if(w.t.length||extra)h+='<div>'+tags(w.t)+extra+'</div>';
+      h+='</div></li>';
+    });
+    h+='</ul></div>';
+  });
+  document.getElementById('timeline').innerHTML=h;
+}
+renderTimeline();
+renderChecklist();
+
+function daysTo(d){return Math.round((d-today)/864e5);}
+function cd(label,d,dateText){
+  var n=daysTo(d),txt;
+  if(n>13)txt=Math.floor(n/7)+' weeks';else if(n>1)txt=n+' days';else if(n===1)txt='Tomorrow';else if(n===0)txt='Today';else txt='Complete';
+  return '<div class="count"><span class="label">'+label+'</span><b>'+txt+'</b><span class="small">'+dateText+'</span></div>';
+}
+document.getElementById('countdown').innerHTML=cd('Paper 1',P1,'Monday 17 May 2027')+cd('Paper 2',P2,'Tuesday 15 June 2027');
+var tw=document.getElementById('thisweek');
+if(current){
+  tw.innerHTML='<span class="label">This week</span><h3 style="margin:4px 0 6px">'+current.f+'</h3><p style="margin:0 0 8px">'+current.p+'</p>'+watchLinks(current.v)+'<div>'+tags(current.t)+(current.five?'<span class="tag plain">5 sessions</span>':'')+(current.send?'<button type="button" class="tag" data-go="send-work">Send work</button>':'')+'</div>';
+}else if(today<D('2026-11-02')){
+  tw.innerHTML='<span class="label">Starting soon</span><p style="margin:4px 0 0">Your plan starts on Monday 2 November.</p>';
+}else{
+  tw.innerHTML='<span class="label">Well done</span><p style="margin:4px 0 0">Both chemistry exams are complete.</p>';
+}
+
+/* favourites: [question, marks, topic, what gets the marks, watch out, source] in Timeline order */
+var F1=[
+ ['Moles and reacting masses','2 to 5 marks',3,'Moles = mass ÷ Mr. Use the ratio in the balanced equation to find the moles of the substance you want, then mass = moles × Mr. Change kg to g first. For example, 100 kg of TiO₂ is 100 000 g, and 100 000 ÷ 80 = 1250 mol.','Write every step. Marks are given for using a wrong earlier number correctly, so your working always earns credit.','AQA 8462/1H June 2023 Q10.2, June 2022 Q7.4'],
+ ['Limiting reactant','2 to 4 marks',3,'Work out the moles of each reactant. Use the equation ratio to find how much of one is needed to react with the other. The reactant that is used up first is the limiting reactant, and it decides how much product forms.','Say clearly which reactant is limiting and give the number that shows it.','AQA 8462/1H June 2020 Q6.2'],
+ ['Strong and weak acids, and pH','1 to 6 marks',4,'A strong acid is completely ionised in aqueous solution; a weak acid is only partially ionised. pH depends on the concentration of H⁺ ions: the higher the concentration of H⁺ ions, the lower the pH. Each fall of 1 pH unit means the H⁺ ion concentration is 10 times higher. A more concentrated acid has more acid dissolved in the same volume.','Keep strength (how much it ionises) and concentration (how much is dissolved) separate.','AQA 8462/1H June 2023 Q5.1, June 2022 Q8.1, June 2024 Q9.1 and Q9.2'],
+ ['Describe how to make a pure, dry salt','6 marks',4,'Add the insoluble solid, such as zinc carbonate, to the acid until it is in excess, shown by solid left over. Filter to remove the excess solid. Heat the filtrate using a water bath or electric heater to the point of crystallisation, then leave it to crystallise. Pat the crystals dry with filter paper.','Heating the solution to dryness only gets 1 mark. Heat to the point of crystallisation, then leave it.','AQA 8462/1H June 2023 Q3, June 2022 Q4.4'],
+ ['Describe how to carry out a titration','2 to 6 marks',4,'Use a pipette to put 25.0 cm³ of alkali into a conical flask. Add a few drops of indicator, such as methyl orange or phenolphthalein. Record the starting reading on the burette. Add the acid while swirling the flask on a white tile, adding it dropwise near the end point, until the indicator changes colour permanently. Record the final burette reading and work out the volume added. Repeat until you have concordant results (within 0.10 cm³) and calculate the mean of those.','Universal indicator is not accepted for a titration.','AQA 8462/1H June 2024 Q9.3, June 2021 Q9.3, June 2019 Q2.5, June 2022 Q8.2'],
+ ['Titration calculation','3 to 5 marks',3,'Moles of the known solution = volume in dm³ × concentration, for example 23.50 ÷ 1000 × 0.100 = 0.00235 mol Ba(OH)₂. Use the equation ratio: 0.00235 × 2 = 0.00470 mol HCl. Concentration = moles ÷ volume in dm³: 0.00470 × 1000 ÷ 25.0 = 0.188 mol/dm³.','Use the mole ratio from the balanced equation, and only use the concordant titres for the mean.','AQA 8462/1H June 2022 Q8.3, June 2023 Q5.5'],
+ ['Percentage yield and atom economy','2 to 4 marks',3,'Atom economy = Mr of the useful product ÷ total Mr of all the reactants × 100, for example 59 ÷ 87 × 100 = 67.8%. A high atom economy gives a higher percentage of useful product, which is better for sustainable development and costs less. Percentage yield = mass of product made ÷ maximum theoretical mass × 100. The yield is less than 100% because the reaction may be reversible, some product is lost when it is separated, and some reactants may react in unexpected ways.','Multiply each Mr by the number in front of it in the balanced equation before you add them up.','AQA 8462/1H June 2018 Q2.5, June 2020 Q3.5 and Q3.6, June 2024 Q1.5, AQA specification 4.3.3'],
+ ['Gas volumes','2 to 5 marks',3,'One mole of any gas at room temperature and pressure takes up 24 dm³, so volume = moles × 24. For example, 14 g of iron ÷ 56 = 0.25 mol, the equation ratio gives 0.375 mol of Cl₂, and 0.375 × 24 = 9.0 dm³.','24 dm³ is 24 000 cm³. Check which unit the question asks for.','AQA 8462/1H June 2021 Q5.6, June 2023 Q10.2, June 2020 Q7.6'],
+ ['Electrolysis: what forms and why','2 to 4 marks',4,'Ionic compounds only conduct when molten or dissolved, because the ions are free to move. In a solution, water molecules break down to produce H⁺ and OH⁻ ions. Hydrogen forms at the negative electrode if the metal is more reactive than hydrogen. OH⁻ ions are attracted to the positive electrode, where they are discharged (oxidised) to give oxygen, unless a halide is present. In brine, sodium ions and hydroxide ions are left in solution.','Ions that lose electrons are oxidised; ions that gain electrons are reduced.','AQA 8462/1H June 2023 Q7.2 and Q7.3, June 2022 Q6.6'],
+ ['Half equations','1 to 3 marks',4,'Negative electrode, reduction (gain of electrons): Cu²⁺ + 2e⁻ → Cu. Positive electrode, oxidation (loss of electrons): 2Cl⁻ → Cl₂ + 2e⁻, 2Br⁻ → Br₂ + 2e⁻, 2O²⁻ → O₂ + 4e⁻.','Copper ions are reduced, not oxidised. Check the charges are the same on both sides.','AQA 8462/1H June 2020 Q4.3, June 2021 Q7.2, June 2019 Q7.3'],
+ ['Extracting aluminium','2 to 4 marks',4,'Aluminium is more reactive than carbon, so it is extracted by electrolysis. Aluminium oxide is mixed with cryolite because the mixture has a lower melting point. The positive carbon electrodes react with the oxygen made there, producing carbon dioxide, so they wear away and must be replaced.','Cryolite is not a catalyst. It lowers the melting point.','AQA 8462/1H June 2019 Q7.1 and Q7.4'],
+ ['Redox and displacement','2 to 4 marks',4,'In Mg + Zn²⁺ → Mg²⁺ + Zn, magnesium atoms are oxidised because they lose electrons, and zinc ions are reduced because they gain electrons. In extraction, a metal oxide such as Fe₂O₃ is reduced because it loses oxygen. Carbon can only extract metals that are less reactive than carbon.','Name what is oxidised or reduced, and give the reason in terms of electrons or oxygen.','AQA 8462/1H June 2020 Q6.3 and Q6.4, June 2023 Q9.1, June 2022 Q7.1'],
+ ['Explain ionic bonding','3 to 4 marks',2,'The magnesium atom loses two electrons and the oxygen atom gains two electrons, forming Mg²⁺ and O²⁻ ions with full outer shells. The ions are held by strong electrostatic forces of attraction between oppositely charged ions, in all directions in a giant lattice.','It is the atoms that lose and gain electrons. Any mention of sharing electrons limits the marks.','AQA 8462/1H June 2022 Q1.7, AQA 8464/C/1H June 2018 Q2.2'],
+ ['Explain a property using structure and bonding','2 to 6 marks',2,'Methane has small molecules with weak intermolecular forces, which need little energy to overcome, so it has a low boiling point. Poly(ethene) has much larger molecules with stronger intermolecular forces, which need more energy, so it is a solid. Metals and graphite conduct because delocalised electrons move through the structure and carry charge.','"Weak covalent bonds" and "breaking covalent bonds" are both marked wrong for small molecules.','AQA 8462/1H June 2023 Q4.5, June 2022 Q1.5, June 2021 Q1.6'],
+ ['Nanoparticles','2 to 4 marks',2,'Nanoparticles are 1 to 100 nm across. They have a much higher surface area to volume ratio, so less material is needed for the same effect. When the side of a cube gets 10 times smaller, the surface area to volume ratio gets 10 times bigger. Uses include medicine, electronics, catalysts, cosmetics and sun creams. There may be risks because their effects on health are not yet fully understood.','"Nanoparticles are smaller" on its own gets no mark. Link it to surface area to volume ratio.','AQA 8462/1H June 2023 Q10.1, June 2019 Q3.4, AQA specification 4.2.4'],
+ ['Bond energy calculations','3 to 5 marks',5,'Energy is needed to break bonds and energy is released when bonds form. Energy change = energy needed to break bonds minus energy released making bonds. If more energy is released than needed, the reaction is exothermic and the answer is negative.','Count every bond, including the number in front of each molecule in the equation.','AQA 8462/1H June 2023 Q4.2, June 2021 Q8.4, June 2024 Q8.3'],
+ ['Reaction profiles','2 to 4 marks',5,'Draw horizontal lines for the reactants and products, with the products lower for an exothermic reaction. Label the activation energy from the reactants line up to the peak, and the overall energy change from the reactants line to the products line.','The activation energy arrow starts at the reactants line, not at zero.','AQA 8462/1H June 2020 Q7.1, June 2019 Q5.7'],
+ ['Temperature change practical','4 to 6 marks',5,'Measure a volume of acid with a measuring cylinder into a polystyrene cup. Record the starting temperature with a thermometer. Add a known mass of solid, measured on a balance, and stir. Record the highest temperature reached. Repeat with different masses, using the same volume and concentration of acid and the same starting temperature each time.','Polystyrene is used because it is a good insulator, which reduces energy transfer to the surroundings.','AQA 8462/1H June 2022 Q2.1, June 2019 Q9.1'],
+ ['Cells and fuel cells','1 to 6 marks',5,'A cell uses a chemical reaction to produce electricity, and the voltage depends on the metals and the electrolyte. The bigger the difference in reactivity, the higher the voltage. Non-rechargeable cells stop when a reactant is used up, because the reaction cannot be reversed. In a hydrogen fuel cell, hydrogen is oxidised to produce water: 2H₂ + O₂ → 2H₂O. Fuel cells produce only water, have no toxic chemicals to dispose of, and refuel faster than batteries recharge, but hydrogen is difficult to store.','Higher tier half equations: H₂ → 2H⁺ + 2e⁻ and O₂ + 4H⁺ + 4e⁻ → 2H₂O.','AQA 8462/1H June 2018 Q3.2 to Q3.5, June 2020 Q7.2 and Q7.3, June 2019 Q6.2 and Q6.4'],
+ ['Atoms, isotopes and relative atomic mass','2 to 4 marks',1,'Isotopes are atoms of the same element with the same number of protons but different numbers of neutrons. Relative atomic mass = (mass × % of each isotope, added together) ÷ 100, for example (6 × 7.6 + 7 × 92.4) ÷ 100 = 6.9.','"Different relative atomic mass" is not accepted as part of the isotope definition.','AQA 8462/1H June 2023 Q1.5, AQA 8464/C/1H June 2021 Q1.4'],
+ ['Group 1 and Group 7 trends','2 to 4 marks',1,'Group 1: reactivity increases down the group because the outer electron is further from the nucleus, so there is less attraction and the outer electron is lost more easily. Group 7: reactivity decreases down the group because the outer shell is further from the nucleus, so an electron is gained less easily. A more reactive halogen displaces a less reactive one from a solution of its salt.','Always mention the outer electron or outer shell, its distance from the nucleus and the attraction.','AQA 8462/1H June 2022 Q5.2, June 2021 Q4.3, June 2020 Q8.5'],
+ ['Transition metals','1 to 2 marks',1,'Compared with Group 1, transition metals have higher melting points and densities, are stronger and harder, and are less reactive. Transition metals form ions with different charges, form coloured compounds and are useful as catalysts.','Answer the property asked about. If the question asks about physical properties, coloured compounds do not score.','AQA 8462/1H June 2022 Q1.3, June 2018 Q2.3, June 2020 Q2.1'],
+ ['The model of the atom','2 to 4 marks',1,'Plum pudding model: a ball of positive charge with electrons embedded in it. Alpha scattering: most alpha particles passed straight through and some were deflected, so the atom is mostly empty space, with the positive charge and most of the mass in a tiny nucleus. Bohr: electrons are at specific distances from the nucleus. Chadwick provided evidence for neutrons.','Most alpha particles went straight through, not all of them.','AQA 8462/1H June 2020 Q5.1 and Q5.2, June 2019 Q4.4']
+];
+var F2=[
+ ['Calculate the rate from a graph or table','1 to 5 marks',6,'Mean rate = quantity ÷ time, with units such as cm³/s, g/s or mol/s. Higher tier: draw a tangent at the time asked, read an x step and a y step from it, then rate = y step ÷ x step. Give the answer to the significant figures asked.','Show the numbers you read from your tangent. Those steps earn marks on their own.','AQA 8462/2H June 2023 Q1.2 and Q7.3, June 2022 Q8.2'],
+ ['Explain why a change speeds up a reaction','2 to 4 marks',6,'Start by stating the effect, then explain it. Increasing the temperature increases the rate of reaction, because the particles have more energy, so there are more frequent successful collisions, as more particles have energy equal to or greater than the activation energy. Increasing the concentration or gas pressure increases the rate, because there are more particles in the same volume, so there are more frequent successful collisions. Increasing the surface area increases the rate, because more particles are exposed to the other reactant, so there are more frequent successful collisions. A catalyst increases the rate by providing a different pathway with a lower activation energy.','"More collisions" on its own gets no mark. For concentration and surface area, do not say the particles move faster.','AQA 8462/2H June 2024 Q9.5, June 2023 Q7.1, June 2022 Q7.6, AQA 8464/C/2H June 2018 Q5.8'],
+ ['Rates practical and rate curves','1 to 6 marks',6,'Measure the volume of gas in a gas syringe at regular times, or time how long a cross takes to disappear. The rate is highest at the start and decreases because the concentration of reactants decreases. The curve levels off when a reactant is used up. A slower reaction gives a less steep curve that levels off at the same amount if the same amount of reactant is used.','Name a variable you can measure. "Amount" gets no mark.','AQA 8462/2H June 2022 Q8.3 and Q8.4, June 2023 Q7.4, AQA 8464/C/2H June 2021 Q1.1'],
+ ['Chromatography and Rf','2 to 6 marks',8,'Rf = distance moved by the substance ÷ distance moved by the solvent, so distance moved by a dye = Rf × solvent distance, for example 0.60 × 12.0 = 7.2 cm. Draw the start line in pencil, keep the spots above the solvent level, put a lid on and mark the solvent front. Substances separate because they have different attractions to the paper and the solvent, so they spend different amounts of time in each phase.','A start line in ink, or below the solvent level, makes the spots run into the solvent.','AQA 8462/2H June 2023 Q6.1 to Q6.3'],
+ ['Gas tests','2 marks each',8,'Hydrogen: a burning splint burns with a (squeaky) pop. Oxygen: a glowing splint relights. Carbon dioxide: limewater turns milky (cloudy). Chlorine: damp litmus paper is bleached and turns white.','A glowing splint for hydrogen, or a burning one for oxygen, scores zero.','AQA 8462/2H June 2023 Q1.4, June 2022 Q5.6, June 2020 Q9.1'],
+ ['Flame tests and metal hydroxides','1 to 4 marks',8,'Flame tests: lithium crimson, sodium yellow, potassium lilac, calcium orange-red, copper green. Add sodium hydroxide solution: Cu²⁺ blue precipitate, Fe²⁺ green, Fe³⁺ brown, and Al³⁺, Ca²⁺ and Mg²⁺ white. Only the aluminium hydroxide precipitate dissolves in excess sodium hydroxide.','Clean the wire between flame tests, or colours from the last sample will show.','AQA 8462/2H June 2020 Q1.1 to Q1.3, June 2021 Q7.3 and Q7.4, June 2022 Q1.5, AQA specification 4.8.3'],
+ ['Testing for negative ions','2 to 6 marks',8,'Carbonate: add dilute acid and bubble the gas through limewater, which turns milky. Halide: add dilute nitric acid then silver nitrate solution: chloride gives a white precipitate, bromide cream and iodide yellow. Sulfate: add dilute hydrochloric acid then barium chloride solution, which gives a white precipitate.','Do not use sulfuric acid in the sulfate test, because it contains sulfate ions.','AQA 8462/2H June 2023 Q3.1, June 2022 Q1.6, June 2024 Q1.2, June 2019 Q2'],
+ ['Instrumental methods','1 to 3 marks',8,'Flame emission spectroscopy puts a sample in a flame and gives a line spectrum, which is compared with reference spectra to identify the metal ions and find their concentration. Instrumental methods are more accurate, more sensitive and faster, and need only a small sample.','Give a reason that is about the method, such as sensitivity, not "it is a machine".','AQA 8462/2H June 2023 Q3.2 and Q3.3, June 2024 Q1.1'],
+ ['Fractional distillation and chain length','2 to 4 marks',7,'Crude oil is heated to vaporise the hydrocarbons. There is a temperature gradient in the column, hotter at the bottom and cooler at the top. The fractions condense at different heights because they have different boiling points. Larger molecules have higher boiling points and are more viscous; smaller ones are more flammable.','Do not mix up fractional distillation with cracking.','AQA 8462/2H June 2022 Q4.1 and Q4.5, AQA 8464/C/2H June 2019 Q7.1'],
+ ['Cracking and the bromine water test','1 to 3 marks',7,'Cracking breaks long hydrocarbons into smaller, more useful molecules, using a high temperature with steam or a catalyst. Balance the carbons and hydrogens, for example C₁₀H₂₂ → C₈H₁₈ + C₂H₄. Alkenes turn bromine water from orange to colourless.','"Clear" gets no mark. Write "colourless".','AQA 8462/2H June 2022 Q4.6, June 2024 Q8.2, June 2021 Q2.5'],
+ ['Combustion equations','1 to 2 marks',7,'Complete combustion of a hydrocarbon gives carbon dioxide and water, for example C₉H₂₀ + 14O₂ → 9CO₂ + 10H₂O. Sulfur impurities produce sulfur dioxide, which causes acid rain and breathing problems.','Balance carbon first, then hydrogen, then oxygen last.','AQA 8462/2H June 2022 Q4.3 and Q4.4'],
+ ['Reactions of alkenes','1 to 6 marks',7,'Alkenes have a C=C double bond and the general formula CₙH₂ₙ. They react by addition across the double bond: with hydrogen (using a catalyst) to make an alkane, with steam (using a catalyst) to make an alcohol, and with halogens such as bromine. They burn in oxygen like other hydrocarbons, but are more likely to burn incompletely with a smoky flame.','The double bond becomes a single bond in every addition reaction.','AQA specification 4.7.2.2, AQA 8462/2H June 2020 Q3'],
+ ['Alcohols','1 to 4 marks',7,'Methanol, ethanol, propanol and butanol all contain the OH group. They fizz with sodium, giving off hydrogen. They burn in air to give carbon dioxide and water, dissolve in water to make a neutral solution, and are oxidised by oxidising agents to carboxylic acids. They are used as fuels and solvents, and ethanol is in alcoholic drinks. Ethanol is made by fermenting sugar with yeast at 25 to 45 °C without oxygen.','For fermentation, give the temperature range and say there is no oxygen.','AQA 8462/2H June 2021 Q10.5 and Q10.7, AQA specification 4.7.2.3'],
+ ['Carboxylic acids and esters','1 to 4 marks',7,'Carboxylic acids contain the COOH group, for example methanoic acid HCOOH and ethanoic acid. They react with carbonates to give a salt, water and carbon dioxide, so the mass of the flask decreases as the gas escapes. They are weak acids because they only partially ionise, as the reaction is reversible. Ethanoic acid reacts with ethanol, using an acid catalyst, to make the ester ethyl ethanoate.','At the same concentration, a weak acid has a higher pH than a strong acid.','AQA 8462/2H June 2020 Q7.1 to Q7.5'],
+ ['Addition and condensation polymers','1 to 3 marks',7,'Addition polymers form from alkene monomers. Draw the repeating unit with a single C-C bond, bonds extending through the brackets and n after the brackets. Condensation polymers form from monomers with two functional groups each, and a small molecule such as water or HCl is lost. Thermosoftening polymers melt when heated; thermosetting polymers have cross-links between the chains, so they do not melt.','The repeating unit has a single bond, not a double bond.','AQA 8462/2H June 2023 Q8.2 and Q8.4, June 2024 Q8.5 to Q8.8, June 2021 Q4.6'],
+ ['Amino acids, proteins and DNA','1 to 3 marks',7,'Amino acids have an amine group and a carboxylic acid group, and join by condensation polymerisation to make polypeptides and proteins. DNA is made of two polymer chains of four different nucleotides, in a double helix. Starch and cellulose are natural polymers made from sugars.','Name the small molecule lost in condensation polymerisation: usually water.','AQA 8462/2H June 2023 Q8.5 to Q8.9, June 2020 Q9.2 and Q9.6'],
+ ['Equilibrium and changing conditions','1 to 4 marks',6,'Equilibrium is reached in a closed system when the forward and reverse reactions take place at the same rate. Raising the temperature shifts the equilibrium in the endothermic direction, so the yield of an exothermic reaction decreases. Raising the pressure shifts it towards the side with fewer molecules of gas; if both sides have the same number, there is no effect. A catalyst has no effect on the position of equilibrium.','"It is a closed system" alone is not enough. Say the rates are the same.','AQA 8462/2H June 2023 Q9.5 and Q9.8, June 2024 Q7.2 and Q7.3, June 2022 Q7.6'],
+ ['The Haber process','2 to 6 marks',10,'Nitrogen from the air and hydrogen from natural gas pass over an iron catalyst at about 450 °C and 200 atmospheres. The mixture is cooled so the ammonia liquefies, and the unreacted nitrogen and hydrogen are recycled. A higher temperature gives a higher rate but shifts the equilibrium to the left, because the forward reaction is exothermic, so 450 °C is a compromise between rate and yield. A higher pressure gives a higher yield and rate, but costs more energy and needs stronger equipment.','For the top level, link each condition to both rate and yield, then to cost.','AQA 8462/2H June 2022 Q7.1, Q7.3 and Q7.6, June 2024 Q2.1, Q2.2 and Q7.4'],
+ ['NPK fertilisers','1 to 4 marks',10,'NPK fertilisers contain nitrogen, phosphorus and potassium compounds. Ammonia reacts with acids to make ammonium salts. Phosphate rock is insoluble, so it is treated with acid: with sulfuric acid it gives calcium sulfate and calcium phosphate, and with phosphoric acid it gives calcium phosphate. Potassium chloride and potassium sulfate are mined.','When choosing a fertiliser, check which elements each compound actually contains.','AQA 8462/2H June 2023 Q10.1 to Q10.6'],
+ ['Potable water and waste water','1 to 4 marks',10,'Ground water is filtered, then sterilised with chlorine, ozone or ultraviolet light to kill microbes. Sea water is desalinated by distillation or reverse osmosis, which need a lot of energy. Dissolved ions pass through filters because they are in solution. Sewage is screened, then sedimentation produces sludge and effluent; the sludge is digested anaerobically and the effluent is treated aerobically.','Potable water is safe to drink but is not pure. It still contains dissolved substances.','AQA 8462/2H June 2022 Q5.1, Q5.3 and Q5.4, June 2024 Q3.3'],
+ ['Life cycle assessment','4 to 6 marks',10,'Compare both products at each stage: raw materials, manufacture, use and disposal. Use numbers from the table, such as total energy 7500 kJ compared with 1800 kJ. Link points to effects: crude oil is finite, glass can be reused, both can be recycled, and energy from fossil fuels causes pollution. Finish with a judgement that follows from your reasons.','The top level needs a judgement linked to your reasons.','AQA 8462/2H June 2022 Q3'],
+ ['Corrosion and materials','1 to 4 marks',10,'Iron rusts when both air (oxygen) and water are present. Paint, oil or grease act as a barrier. A more reactive metal such as magnesium or zinc gives sacrificial protection. Aluminium is protected by a layer of aluminium oxide on its surface, which stops air and water reaching the metal. Composites have reinforcement, such as carbon fibre, held in a matrix or binder.','Aluminium is protected by its oxide layer, not by sacrificial protection.','AQA 8462/2H June 2019 Q4, June 2024 Q6.2 to Q6.4'],
+ ['How the early atmosphere changed','2 to 6 marks',9,'Nitrogen increased because of volcanic activity. Carbon dioxide decreased because it dissolved in the oceans and formed carbonate sediments. Later, algae and plants evolved, and photosynthesis increased oxygen and decreased carbon dioxide. Crude oil and natural gas formed from plankton that was covered by sediments, under high temperature and pressure.','Answer for the time in the question. For the early decrease in carbon dioxide, photosynthesis is not accepted.','AQA 8462/2H June 2022 Q6.1 to Q6.5'],
+ ['Greenhouse gases and climate change','1 to 4 marks',9,'Short wavelength radiation from the Sun reaches the Earth, which re-emits longer wavelength radiation. Greenhouse gases absorb it, so the temperature increases. A growing population needs more energy, so more fossil fuels are burned, and more food, so more methane is produced by farming. Effects include melting ice, rising sea levels, flooding and extreme weather.','Acid rain, global dimming and the ozone layer are not effects of climate change.','AQA 8462/2H June 2023 Q4.2 to Q4.4']
+];
+/* Try it questions, one per favourite, same order as F1 and F2. q question, m marks, h hint, a worked answer (one line per mark unless six), six = levels marked */
+var TRY1=[
+ {q:'Calculate the mass of magnesium chloride made when 4.8 g of magnesium reacts with excess hydrochloric acid. Mg + 2HCl → MgCl₂ + H₂ (Ar: Mg = 24, Cl = 35.5)',m:3,h:'Start by turning the mass of magnesium into moles.',a:['Moles of Mg = 4.8 ÷ 24 = 0.20 mol ✓','The ratio Mg : MgCl₂ is 1 : 1, so 0.20 mol of MgCl₂ ✓','Mr of MgCl₂ = 24 + (2 × 35.5) = 95, so mass = 0.20 × 95 = 19 g ✓']},
+ {q:'0.10 mol of magnesium is added to 0.10 mol of hydrochloric acid. Mg + 2HCl → MgCl₂ + H₂. Which reactant is the limiting reactant? Explain your answer.',m:2,h:'How many moles of HCl would 0.10 mol of Mg need?',a:['0.10 mol of Mg needs 2 × 0.10 = 0.20 mol of HCl ✓','There is only 0.10 mol of HCl, so hydrochloric acid is the limiting reactant ✓']},
+ {q:'(a) Explain the difference between a strong acid and a weak acid. (b) Solution A has a pH of 2 and solution B has a pH of 4. How many times greater is the concentration of H⁺ ions in solution A?',m:3,h:'For (b), each pH unit is a factor of 10.',a:['(a) A strong acid is completely ionised in aqueous solution ✓','(a) A weak acid is only partially ionised ✓','(b) 2 pH units = 10 × 10 = 100 times greater ✓']},
+ {q:'Describe how you would make pure, dry crystals of copper sulfate from copper oxide and dilute sulfuric acid.',m:6,six:true,h:'Think: react, remove the extra solid, get the crystals out of the solution.',a:['Warm the dilute sulfuric acid in a beaker','Add copper oxide a spatula at a time, stirring','Keep adding until copper oxide is left over (in excess), so all the acid has reacted','Filter to remove the excess copper oxide','Heat the filtrate in an evaporating basin on a water bath to the point of crystallisation','Leave to cool and crystallise, then pat the crystals dry with filter paper']},
+ {q:'Describe how you would use a titration to find the volume of dilute hydrochloric acid that exactly neutralises 25.0 cm³ of sodium hydroxide solution.',m:6,six:true,h:'List the equipment in the order you would use it, from pipette to burette.',a:['Use a pipette to put 25.0 cm³ of sodium hydroxide into a conical flask','Add a few drops of indicator, such as methyl orange or phenolphthalein','Fill a burette with hydrochloric acid and record the starting reading','Add the acid while swirling, with the flask on a white tile','Add the acid dropwise near the end point, until the indicator changes colour permanently','Record the final reading and work out the volume added','Repeat until you get concordant results (within 0.10 cm³) and calculate the mean']},
+ {q:'25.0 cm³ of sodium hydroxide solution is neutralised by 20.00 cm³ of 0.100 mol/dm³ hydrochloric acid. NaOH + HCl → NaCl + H₂O. Calculate the concentration of the sodium hydroxide in mol/dm³.',m:3,h:'Find the moles of the solution where you know both the volume and the concentration.',a:['Moles of HCl = 20.00 ÷ 1000 × 0.100 = 0.00200 mol ✓','The ratio is 1 : 1, so 0.00200 mol of NaOH ✓','Concentration = 0.00200 ÷ (25.0 ÷ 1000) = 0.0800 mol/dm³ ✓']},
+ {q:'Calcium oxide is made by heating calcium carbonate: CaCO₃ → CaO + CO₂ (Mr: CaCO₃ = 100, CaO = 56). (a) Calculate the atom economy for making calcium oxide. (b) A student expected 5.6 g of calcium oxide but made 4.2 g. Calculate the percentage yield.',m:3,h:'Atom economy uses Mr values. Percentage yield uses masses.',a:['(a) 56 ÷ 100 × 100 ✓','(a) = 56% ✓','(b) 4.2 ÷ 5.6 × 100 = 75% ✓']},
+ {q:'Calculate the volume of carbon dioxide, at room temperature and pressure, made when 10 g of calcium carbonate decomposes. CaCO₃ → CaO + CO₂ (Mr of CaCO₃ = 100)',m:3,h:'Moles first, then the ratio, then × 24.',a:['Moles of CaCO₃ = 10 ÷ 100 = 0.10 mol ✓','The ratio is 1 : 1, so 0.10 mol of CO₂ ✓','Volume = 0.10 × 24 = 2.4 dm³ ✓']},
+ {q:'Sodium chloride solution is electrolysed. Name the product at each electrode, and explain why sodium is not produced.',m:3,h:'Compare the reactivity of sodium and hydrogen.',a:['Hydrogen at the negative electrode ✓','Chlorine at the positive electrode ✓','Sodium is more reactive than hydrogen, so hydrogen is produced instead ✓']},
+ {q:'Complete these half equations: (a) Pb²⁺ + ____ → Pb (b) 2Br⁻ → Br₂ + ____ (c) Which half equation shows oxidation? Give a reason.',m:3,h:'Count the charges on each side. They must balance.',a:['(a) 2e⁻ ✓','(b) 2e⁻ ✓','(c) (b), because the bromide ions lose electrons ✓']},
+ {q:'Aluminium is extracted by electrolysis. Explain why aluminium oxide is mixed with cryolite, and why the positive electrodes must be replaced.',m:3,h:'One reason is about temperature, the other is about what forms at the positive electrode.',a:['Cryolite lowers the melting point, so less energy is needed ✓','Oxygen forms at the positive electrode and reacts with the carbon ✓','This makes carbon dioxide, so the electrode wears away ✓']},
+ {q:'Zinc reacts with copper sulfate solution: Zn + Cu²⁺ → Zn²⁺ + Cu. Which species is oxidised? Give a reason.',m:2,h:'Oxidation Is Loss of electrons.',a:['Zinc (atoms) are oxidised ✓','Because they lose electrons ✓']},
+ {q:'Describe how sodium and chlorine atoms form sodium chloride. Give your answer in terms of electrons.',m:4,h:'Say which atom loses, which atom gains, how many, and what forms.',a:['The sodium atom loses one electron ✓','The chlorine atom gains one electron ✓','This forms Na⁺ and Cl⁻ ions with full outer shells ✓','The oppositely charged ions are held by strong electrostatic forces of attraction ✓']},
+ {q:'Explain why sodium chloride has a high melting point but chlorine has a low melting point.',m:4,h:'Compare what has to be overcome in each substance.',a:['Sodium chloride is a giant lattice with strong electrostatic forces between oppositely charged ions ✓','A lot of energy is needed to overcome these forces ✓','Chlorine is made of small molecules with weak intermolecular forces ✓','Only a little energy is needed to overcome these forces ✓']},
+ {q:'(a) A cube has sides of 10 nm. Calculate its surface area to volume ratio. (b) Explain why sun cream made with nanoparticles needs less material.',m:3,h:'Surface area = 6 × side × side. Volume = side × side × side.',a:['(a) Surface area = 600 nm² and volume = 1000 nm³ ✓','(a) Ratio = 600 ÷ 1000 = 0.6 ✓','(b) Nanoparticles have a higher surface area to volume ratio, so less is needed for the same effect ✓']},
+ {q:'H₂ + Cl₂ → 2HCl. Bond energies: H-H = 436 kJ/mol, Cl-Cl = 243 kJ/mol, H-Cl = 432 kJ/mol. Calculate the overall energy change.',m:3,h:'There are two H-Cl bonds in the products.',a:['Energy to break bonds = 436 + 243 = 679 kJ/mol ✓','Energy released making bonds = 2 × 432 = 864 kJ/mol ✓','Energy change = 679 − 864 = −185 kJ/mol ✓']},
+ {q:'On paper, sketch a reaction profile for an exothermic reaction. Label the activation energy and the overall energy change.',m:3,h:'Where do the products sit compared with the reactants in an exothermic reaction?',a:['Products line drawn lower than the reactants line ✓','Activation energy labelled from the reactants line up to the peak ✓','Overall energy change labelled from the reactants line to the products line ✓']},
+ {q:'Plan an investigation into how the mass of magnesium powder affects the temperature rise when it reacts with dilute hydrochloric acid.',m:6,six:true,h:'Start with measuring the acid, and finish with repeating and keeping things the same.',a:['Measure a fixed volume of hydrochloric acid with a measuring cylinder','Pour it into a polystyrene cup (with a lid)','Record the starting temperature with a thermometer','Add a known mass of magnesium, measured on a balance, and stir','Record the highest temperature reached and work out the rise','Repeat with different masses of magnesium','Keep the volume and concentration of acid and the starting temperature the same']},
+ {q:'Give two advantages and one disadvantage of hydrogen fuel cells compared with rechargeable batteries.',m:3,h:'Think about what comes out, how long refuelling takes, and storing a gas.',a:['Advantage: the only product is water ✓','Advantage: refuelling is faster than recharging, or there are no toxic chemicals to dispose of ✓','Disadvantage: hydrogen is a flammable gas that is difficult to store ✓']},
+ {q:'Chlorine is 75% chlorine-35 and 25% chlorine-37. Calculate the relative atomic mass of chlorine.',m:2,h:'Multiply each mass by its percentage, add them, then divide by 100.',a:['(35 × 75) + (37 × 25) = 3550 ✓','3550 ÷ 100 = 35.5 ✓']},
+ {q:'Explain why potassium is more reactive than sodium.',m:3,h:'Think about where the outer electron is in each atom.',a:['Potassium has more shells, so its outer electron is further from the nucleus ✓','There is less attraction between the nucleus and the outer electron ✓','So the outer electron is lost more easily ✓']},
+ {q:'Give two differences in physical properties between iron (a transition metal) and sodium (a Group 1 metal).',m:2,h:'Physical properties include melting point, density, strength and hardness.',a:['Iron has a higher melting point ✓','Iron has a higher density, or is stronger or harder ✓']},
+ {q:'Describe how the alpha particle scattering experiment changed the model of the atom.',m:3,h:'What happened to most of the particles, and what happened to a few?',a:['Most alpha particles passed straight through, so the atom is mostly empty space ✓','Some were deflected, so the positive charge and mass are concentrated in a nucleus ✓','The plum pudding model was replaced by the nuclear model ✓']}
+];
+var TRY2=[
+ {q:'40 cm³ of gas is collected in the first 50 seconds of a reaction. Calculate the mean rate of reaction, with units.',m:2,h:'Rate = quantity ÷ time.',a:['40 ÷ 50 = 0.8 ✓','cm³/s ✓']},
+ {q:'Explain why increasing the temperature increases the rate of reaction.',m:3,h:'Start with the effect, then link energy, collisions and activation energy.',a:['Increasing the temperature increases the rate of reaction because the particles have more energy and move faster ✓','So there are more frequent successful collisions ✓','Because more particles have energy equal to or greater than the activation energy ✓']},
+ {q:'A student investigates how the concentration of hydrochloric acid affects the rate of reaction with magnesium, by collecting the gas. Name the independent variable, the dependent variable and one control variable.',m:3,h:'Independent: what you change. Dependent: what you measure.',a:['Independent: concentration of hydrochloric acid ✓','Dependent: volume of gas collected (in a set time) ✓','Control: temperature, volume of acid, or mass or length of magnesium ✓']},
+ {q:'The solvent front moves 8.0 cm and a spot moves 2.4 cm. Calculate the Rf value.',m:2,h:'Spot distance divided by solvent distance.',a:['2.4 ÷ 8.0 ✓','= 0.30 ✓']},
+ {q:'Describe the tests for oxygen and for chlorine, and give the result of each.',m:4,h:'One test uses a splint, the other uses litmus paper.',a:['Oxygen: put a glowing splint in the gas ✓','The splint relights ✓','Chlorine: hold damp litmus paper in the gas ✓','The paper is bleached white ✓']},
+ {q:'(a) A compound gives a green flame and a blue precipitate with sodium hydroxide. Identify the metal ion. (b) Give the precipitate colours for Fe²⁺ and Fe³⁺ with sodium hydroxide.',m:3,h:'Both tests in (a) point to the same metal.',a:['(a) Copper(II), Cu²⁺ ✓','(b) Fe²⁺: green ✓','(b) Fe³⁺: brown ✓']},
+ {q:'(a) Describe how to show that a solution contains sulfate ions. (b) What colour precipitate does a bromide give with acidified silver nitrate?',m:3,h:'The sulfate test uses a barium compound.',a:['(a) Add dilute hydrochloric acid, then barium chloride solution ✓','(a) A white precipitate forms ✓','(b) Cream ✓']},
+ {q:'Give two advantages of flame emission spectroscopy compared with a flame test.',m:2,h:'Think about accuracy, the amount needed and what else it can measure.',a:['More accurate, more sensitive or faster ✓','It can identify more than one metal ion, or measure the concentration ✓']},
+ {q:'Describe how crude oil is separated by fractional distillation.',m:4,h:'Heat it, then think about the temperature in the column.',a:['Crude oil is heated to vaporise it ✓','The column is hotter at the bottom and cooler at the top ✓','The fractions condense at different heights ✓','Because they have different boiling points ✓']},
+ {q:'(a) Complete the cracking equation: C₁₂H₂₆ → C₈H₁₈ + ____ (b) Describe a test to show that the product in (a) is an alkene.',m:3,h:'For (a), count the carbons and hydrogens left over.',a:['(a) C₄H₈ ✓','(b) Add bromine water ✓','(b) It turns from orange to colourless ✓']},
+ {q:'Balance the equation for the complete combustion of propane: C₃H₈ + ___O₂ → ___CO₂ + ___H₂O',m:1,h:'Balance carbon, then hydrogen, then oxygen.',a:['C₃H₈ + 5O₂ → 3CO₂ + 4H₂O ✓']},
+ {q:'Ethene reacts with steam in the presence of a catalyst. Name the product and the type of reaction.',m:2,h:'Water adds across the double bond.',a:['Ethanol ✓','Addition (hydration) ✓']},
+ {q:'(a) Describe what you would see when a small piece of sodium is added to ethanol, and name the gas. (b) Give two conditions for making ethanol by fermentation.',m:4,h:'For (b), think about temperature and air.',a:['(a) Fizzing / bubbles ✓','(a) Hydrogen ✓','(b) Yeast with sugar solution at 25 to 45 °C ✓','(b) Without oxygen (anaerobic) ✓']},
+ {q:'(a) Name the ester made when ethanol reacts with ethanoic acid. (b) Explain why ethanoic acid is a weak acid.',m:3,h:'For (b), use the word ionised.',a:['(a) Ethyl ethanoate ✓','(b) It only partially ionises in aqueous solution ✓','(b) Because the reaction is reversible ✓']},
+ {q:'(a) Explain why thermosetting polymers do not melt when heated but thermosoftening polymers do. (b) Name the small molecule usually lost in condensation polymerisation.',m:3,h:'For (a), think about what joins the chains together.',a:['(a) Thermosetting polymers have cross-links (covalent bonds) between the chains ✓','(a) Thermosoftening polymers have no cross-links, only weak forces between chains ✓','(b) Water ✓']},
+ {q:'Name the monomers that make proteins and DNA, and describe the structure of DNA.',m:3,h:'DNA has two strands.',a:['Proteins: amino acids ✓','DNA: nucleotides ✓','Two polymer chains in a double helix ✓']},
+ {q:'N₂ + 3H₂ ⇌ 2NH₃. The forward reaction is exothermic. Predict and explain the effect on the yield of ammonia of (a) increasing the pressure (b) increasing the temperature.',m:4,h:'Count the molecules of gas on each side for (a).',a:['(a) The yield increases ✓','(a) There are fewer molecules of gas on the right ✓','(b) The yield decreases ✓','(b) The equilibrium shifts in the endothermic direction, to the left ✓']},
+ {q:'Explain why the Haber process uses a temperature of about 450 °C, a pressure of about 200 atmospheres and an iron catalyst.',m:6,six:true,h:'Link each condition to rate, then yield, then cost.',a:['A higher temperature increases the rate because there are more frequent successful collisions','But the forward reaction is exothermic, so a higher temperature lowers the yield','450 °C is a compromise between rate and yield','A higher pressure increases both rate and yield, because there are fewer gas molecules on the right','But higher pressures cost more energy and need stronger equipment, so 200 atmospheres is a compromise','The iron catalyst increases the rate by lowering the activation energy, with no effect on yield']},
+ {q:'(a) Why is phosphate rock treated with an acid before it is used in fertilisers? (b) Name the two products when phosphate rock reacts with sulfuric acid.',m:3,h:'Plants can only take in substances that dissolve.',a:['(a) Phosphate rock is insoluble ✓','(b) Calcium phosphate ✓','(b) Calcium sulfate ✓']},
+ {q:'(a) Describe how ground water is made potable. (b) Give one reason why desalination is expensive.',m:3,h:'Two stages for (a): one removes solids, one kills microbes.',a:['(a) Filter it through filter beds ✓','(a) Sterilise it with chlorine, ozone or ultraviolet light ✓','(b) It needs a lot of energy ✓']},
+ {q:'Paper bag: 1.7 MJ energy, 50 g solid waste, 0.53 kg CO₂. Plastic bag: 1.5 MJ energy, 14 g solid waste, 0.23 kg CO₂. Paper comes from wood; plastic comes from crude oil. Evaluate which bag has the smaller environmental impact.',m:6,six:true,h:'Compare each row with numbers, link to an effect, then decide.',a:['Paper bags use more energy (1.7 MJ compared with 1.5 MJ), so more fossil fuels are burned','Paper bags make about 3.5 times more solid waste (50 g compared with 14 g), so more landfill','Paper bags release about 2.3 times more carbon dioxide, a greenhouse gas that causes global warming','Paper comes from wood, which is renewable; plastic comes from crude oil, which is finite','Plastic bags can be reused more often; paper is biodegradable','Judgement: the plastic bag has the smaller impact in most stages, so it is the better choice if it is reused']},
+ {q:'(a) Explain how blocks of zinc protect an iron ship from rusting. (b) Name the two substances iron needs in order to rust.',m:3,h:'Compare the reactivity of zinc and iron.',a:['(a) Zinc is more reactive than iron ✓','(a) So the zinc corrodes instead of the iron (sacrificial protection) ✓','(b) Air (oxygen) and water ✓']},
+ {q:'Give two ways the amount of carbon dioxide decreased in the early atmosphere, before plants and algae had evolved.',m:2,h:'Photosynthesis does not count here.',a:['It dissolved in the oceans ✓','It formed carbonate sediments (rocks) ✓']},
+ {q:'Explain how greenhouse gases increase the temperature of the Earth.',m:3,h:'Use short wavelength and long wavelength radiation.',a:['Short wavelength radiation from the Sun reaches the Earth ✓','The Earth emits longer wavelength radiation ✓','Greenhouse gases absorb this radiation, so the temperature increases ✓']}
+];
+
+/* practice scores and past-paper log */
+var PKEY='fc-separate-scores-v1', LKEY='fc-separate-log-v1', P={}, LOG=[];
+try{P=JSON.parse(localStorage.getItem(PKEY)||'{}')||{};}catch(e){P={};}
+try{LOG=JSON.parse(localStorage.getItem(LKEY)||'[]')||[];}catch(e){LOG=[];}
+function saveP(){try{localStorage.setItem(PKEY,JSON.stringify(P));}catch(e){}}
+function saveLog(){try{localStorage.setItem(LKEY,JSON.stringify(LOG));}catch(e){}}
+function todayStr(){var d=new Date();return d.getDate()+' '+MON[d.getMonth()]+' '+d.getFullYear();}
+var LVL='<p class="small"><b>Mark it by level:</b> 5 to 6 marks if your answer has all the key steps or points, in a logical order. 3 to 4 if most are there but the order or links are not fully clear. 1 to 2 if some relevant points are there.</p>';
+
+function tryHTML(key,t){
+  var sc=P[key];
+  var h='<details class="try" id="try-'+key+'"><summary>Try it <span class="small">('+t.m+' mark'+(t.m>1?'s':'')+')</span>'+(sc?' <span class="done">Last score: '+sc.s+' / '+t.m+'</span>':'')+'</summary><div class="tbody2">';
+  h+='<p class="q">'+t.q+'</p><p class="small">Write your answer on paper first, with your notes closed.</p>';
+  h+='<div class="btnrow"><button type="button" class="btn sm" data-hint="'+key+'">Show a hint</button><button type="button" class="btn sm" data-ans="'+key+'">Show the answer</button></div>';
+  h+='<div class="hint" id="hint-'+key+'" hidden><b>Hint:</b> '+t.h+'</div>';
+  h+='<div class="ans" id="ans-'+key+'" hidden><b>'+(t.six?'Points the mark scheme looks for:':'Worked answer:')+'</b><ul>'+t.a.map(function(x){return '<li>'+x+'</li>';}).join('')+'</ul>'+(t.six?LVL:'');
+  h+='<p class="small" style="margin:8px 0 4px"><b>How many marks did you get?</b> Tap your score to save it.</p><div class="scorebtns">';
+  for(var i=0;i<=t.m;i++){h+='<button type="button" class="sbtn'+(sc&&sc.s===i?' on':'')+'" data-score="'+key+'" data-v="'+i+'">'+i+'</button>';}
+  h+='</div><p class="small saved" id="saved-'+key+'">'+(sc?'Saved: '+sc.s+' / '+t.m+' on '+sc.d+'.':'')+'</p></div></div></details>';
+  return h;
+}
+function renderFav(list,tries,el,pre){
+  var h='';
+  list.forEach(function(f,i){
+    var key=pre+'-'+i;
+    h+='<div class="fav"><div class="top"><h3>'+(i+1)+'. '+f[0]+'</h3><span class="marks">'+f[1]+'</span></div><div class="say"><b>What gets the marks:</b> '+f[3]+'</div><div class="trap"><b>Watch out:</b> '+f[4]+'</div>'+tryHTML(key,tries[i])+'<div class="where">More on this: <button type="button" class="tag" data-topic="'+f[2]+'">Topic '+f[2]+' links</button></div><div class="src">From: '+f[5]+'</div></div>';
+  });
+  document.getElementById(el).innerHTML=h;
+}
+renderFav(F1,TRY1,'favs1','p1');renderFav(F2,TRY2,'favs2','p2');
+function tryByKey(key){var p=key.split('-');return {t:(p[0]==='p1'?TRY1:TRY2)[+p[1]],f:(p[0]==='p1'?F1:F2)[+p[1]]};}
+document.getElementById('p-exam').addEventListener('click',function(e){
+  var b=e.target.closest('[data-hint],[data-ans],[data-score]');if(!b)return;
+  if(b.hasAttribute('data-hint')){var x=document.getElementById('hint-'+b.getAttribute('data-hint'));x.hidden=!x.hidden;return;}
+  if(b.hasAttribute('data-ans')){var y=document.getElementById('ans-'+b.getAttribute('data-ans'));y.hidden=!y.hidden;return;}
+  var key=b.getAttribute('data-score'),v=+b.getAttribute('data-v'),o=tryByKey(key);
+  P[key]={s:v,m:o.t.m,d:todayStr(),n:o.f[2]};saveP();
+  [].forEach.call(b.parentNode.querySelectorAll('.sbtn'),function(z){z.classList.toggle('on',z===b);});
+  document.getElementById('saved-'+key).textContent='Saved: '+v+' / '+o.t.m+' on '+P[key].d+'. '+(v===o.t.m?'Full marks, well done.':'Add anything you missed to your summary sheet in a different colour.');
+  var sm=document.querySelector('#try-'+key+' summary');var sp=sm.querySelector('.done');if(!sp){sp=document.createElement('span');sp.className='done';sm.appendChild(document.createTextNode(' '));sm.appendChild(sp);}sp.textContent='Last score: '+v+' / '+o.t.m;
+  renderProgress();
+});
+
+/* past-paper log */
+var sel=document.getElementById('log-topic');
+sel.innerHTML=T.map(function(t){return '<option value="'+t.n+'">Topic '+t.n+': '+t.name+'</option>';}).join('');
+document.getElementById('log-form').addEventListener('submit',function(e){
+  e.preventDefault();
+  var what=document.getElementById('log-what').value.trim(),n=+sel.value,got=+document.getElementById('log-got').value,out=+document.getElementById('log-out').value,msg=document.getElementById('log-msg');
+  if(!out||out<1){msg.textContent='Enter how many marks the question was out of.';return;}
+  if(got<0||got>out){msg.textContent='Your score needs to be between 0 and '+out+'.';return;}
+  LOG.push({w:what||'Exam question',n:n,g:got,o:out,d:todayStr()});saveLog();
+  document.getElementById('log-what').value='';document.getElementById('log-got').value='';document.getElementById('log-out').value='';
+  msg.textContent='Saved.';renderProgress();
+});
+document.getElementById('log-list').addEventListener('click',function(e){
+  var b=e.target.closest('[data-del]');if(!b)return;LOG.splice(+b.getAttribute('data-del'),1);saveLog();renderProgress();
+});
+
+var SHORT={1:'Atoms and periodic table',2:'Bonding and structure',3:'Quantitative',4:'Chemical changes',5:'Energy changes',6:'Rates and equilibrium',7:'Organic',8:'Analysis',9:'Atmosphere',10:'Using resources'};
+function topicStats(){
+  return T.map(function(t){
+    var c=counts(t.items,t.n),pg=0,pm=0,lg=0,lo=0;
+    Object.keys(P).forEach(function(k){if(P[k].n===t.n){pg+=P[k].s;pm+=P[k].m;}});
+    LOG.forEach(function(r){if(r.n===t.n){lg+=r.g;lo+=r.o;}});
+    return {t:t,got:c[0],tot:c[2],pg:pg,pm:pm,lg:lg,lo:lo,lost:(pm-pg)+(lo-lg),notyet:c[2]-c[0]-c[1]};
+  });
+}
+function renderProgress(){
+  var st=topicStats(),rows='',any=false;
+  st.forEach(function(r){
+    if(r.pm||r.lo)any=true;
+    var pct=(r.pm+r.lo)?Math.round((r.pg+r.lg)/(r.pm+r.lo)*100)+'%':'';
+    rows+='<tr><td>'+r.t.n+'. '+SHORT[r.t.n]+'</td><td class="num">'+r.got+' / '+r.tot+'</td><td class="num">'+(r.pm?r.pg+' / '+r.pm:'')+'</td><td class="num">'+(r.lo?r.lg+' / '+r.lo:'')+'</td><td class="num">'+(r.pm+r.lo?r.lost:'')+'</td><td class="num">'+pct+'</td></tr>';
+  });
+  document.getElementById('prog-table').innerHTML=rows;
+  var f=document.getElementById('focus');
+  if(any){
+    var ranked=st.filter(function(r){return r.lost>0;}).sort(function(a,b){return b.lost-a.lost;}).slice(0,3);
+    f.innerHTML=ranked.length?'<span class="label">Start here next</span><p style="margin:4px 0 8px">These topics have cost you the most marks so far, so they are your next topics to work on:</p>'+ranked.map(function(r){return '<button type="button" class="tag" data-topic="'+r.t.n+'">Topic '+r.t.n+': '+r.t.name+' ('+r.lost+' marks lost)</button>';}).join(' '):'<span class="label">Start here next</span><p style="margin:4px 0 0">Full marks on everything so far. Keep going with this week\'s job on the Timeline.</p>';
+  }else{
+    var ny=st.slice().sort(function(a,b){return b.notyet-a.notyet;})[0];
+    f.innerHTML='<span class="label">Start here next</span><p style="margin:4px 0 0">Once you mark a Try it question or add a past-paper question below, this box shows the topics that have cost you the most marks. For now, follow this week\'s job on the Timeline.</p>';
+  }
+  var l='';
+  if(!LOG.length){l='<p class="small">No past-paper questions logged yet. After you mark one, add it above.</p>';}
+  else{l='<div class="tblwrap"><table><thead><tr><th>Date</th><th>Question</th><th>Topic</th><th>Score</th><th></th></tr></thead><tbody>';
+    LOG.slice().reverse().forEach(function(r,j){var i=LOG.length-1-j;l+='<tr><td>'+r.d+'</td><td>'+r.w.replace(/</g,'&lt;')+'</td><td class="num">'+r.n+'</td><td class="num">'+r.g+' / '+r.o+'</td><td><button type="button" class="btn sm" data-del="'+i+'">Remove</button></td></tr>';});
+    l+='</tbody></table></div>';}
+  document.getElementById('log-list').innerHTML=l;
+}
+renderProgress();
+var _up=updateProgress;updateProgress=function(){_up();if(document.getElementById('prog-table'))renderProgress();};
+
+/* sessions done (leading measure) */
+var SKEY='fc-separate-sessions-v1',SESS=[];
+try{SESS=JSON.parse(localStorage.getItem(SKEY)||'[]')||[];}catch(e){SESS=[];}
+function saveSess(){try{localStorage.setItem(SKEY,JSON.stringify(SESS));}catch(e){}}
+function iso(d){return d.getFullYear()+'-'+('0'+(d.getMonth()+1)).slice(-2)+'-'+('0'+d.getDate()).slice(-2);}
+function monday(d){var m=new Date(d);m.setHours(0,0,0,0);var k=(m.getDay()+6)%7;m.setDate(m.getDate()-k);return m;}
+function sessIn(start){var e=new Date(start.getTime()+7*864e5);return SESS.filter(function(x){var d=D(x);return d>=start&&d<e;}).length;}
+function weekTarget(){return current&&current.five?5:4;}
+function renderSess(){
+  var m=monday(today),n=sessIn(m),tg=weekTarget();
+  document.getElementById('sess-now').innerHTML='<b>This week: '+n+' of '+tg+' sessions.</b> '+(n>=tg?'Target reached. Well done.':(n?'Keep going.':'Your first one this week is the hardest. Start with five minutes.'));
+  var h='';for(var i=5;i>=1;i--){var w=new Date(m.getTime()-i*7*864e5);h+='<div>Week of '+fmt(w)+': '+sessIn(w)+'</div>';}
+  document.getElementById('sess-weeks').innerHTML=h;
+}
+document.getElementById('sess-add').addEventListener('click',function(){SESS.push(iso(new Date()));saveSess();renderSess();});
+document.getElementById('sess-undo').addEventListener('click',function(){if(SESS.length){SESS.pop();saveSess();}renderSess();});
+renderSess();
+
+/* my why */
+var WKEY='fc-separate-why',wb=document.getElementById('why'),wm=document.getElementById('why-msg');
+try{wb.value=localStorage.getItem(WKEY)||'';}catch(e){}
+function whyCount(){var n=(wb.value.trim().match(/\S+/g)||[]).length;wm.textContent=n?n+' words'+(n>50?'. Try to keep it under 50.':'. Saved on this device.'):'';}
+wb.addEventListener('input',function(){try{localStorage.setItem(WKEY,wb.value);}catch(e){}whyCount();});
+whyCount();
+
+/* summary to send */
+function summaryText(){
+  var st=topicStats(),G=0,N=0,lines=['Chemistry progress, '+todayStr()];
+  st.forEach(function(r){G+=r.got;N+=r.tot;});
+  lines.push('Checklist: '+G+' of '+N+' statements at Got it.');
+  var m=monday(today),wk=[];for(var i=0;i<4;i++){wk.push(sessIn(new Date(m.getTime()-i*7*864e5)));}
+  lines.push('Sessions: '+wk[0]+' this week; previous three weeks '+wk[1]+', '+wk[2]+', '+wk[3]+'.');
+  var qc=qcStats();if(qc[1])lines.push('Quick checks: '+qc[0]+' of '+qc[1]+' right first time.');
+  st.forEach(function(r){
+    var bits=['checklist '+r.got+'/'+r.tot];
+    if(r.pm)bits.push('practice '+r.pg+'/'+r.pm);
+    if(r.lo)bits.push('past papers '+r.lg+'/'+r.lo);
+    lines.push('Topic '+r.t.n+' '+r.t.name+': '+bits.join(', '));
+  });
+  return lines.join('\n');
+}
+document.getElementById('copy-sum').addEventListener('click',function(){
+  var txt=summaryText(),box=document.getElementById('sum-box'),m=document.getElementById('copy-msg');
+  box.value=txt;box.hidden=false;
+  var done=function(){m.textContent='Copied. Paste it into an email to Mr Hussain.';};
+  var fail=function(){box.focus();box.select();m.textContent='Your summary is selected below. Copy it, then paste it into an email to Mr Hussain.';};
+  try{navigator.clipboard.writeText(txt).then(done,fail);}catch(e){fail();}
+});
+
+/* text size */
+var BKEY='fc-separate-big';
+function setBig(on){document.documentElement.classList.toggle('big',on);var b=document.getElementById('txt-size');if(b)b.textContent=on?'Make text normal size':'Make text larger';try{localStorage.setItem(BKEY,on?'1':'0');}catch(e){}}
+var big=false;try{big=localStorage.getItem(BKEY)==='1';}catch(e){}
+setBig(big);
+document.getElementById('txt-size').addEventListener('click',function(){setBig(!document.documentElement.classList.contains('big'));});
+
+/* video */
+var VIDEO='https://youtu.be/9oJ7szwQRVA';
+[].forEach.call(document.querySelectorAll('.video-link'),function(a){a.href=VIDEO;});
+
+
+var tabs=[].slice.call(document.querySelectorAll('.tab'));
+function show(id,noscroll){
+  tabs.forEach(function(t){var on=t.getAttribute('aria-controls')===id;t.setAttribute('aria-selected',on?'true':'false');document.getElementById(t.getAttribute('aria-controls')).hidden=!on;});
+  try{localStorage.setItem(KEY+'-tab',id);}catch(e){}
+  if(!noscroll)window.scrollTo(0,0);
+}
+tabs.forEach(function(t){t.addEventListener('click',function(){show(t.getAttribute('aria-controls'));var h1=document.querySelector('#'+t.getAttribute('aria-controls')+' h1');if(h1){h1.setAttribute('tabindex','-1');try{h1.focus({preventScroll:true});}catch(e){}}if(t.id==='tab-timeline'){var r=document.getElementById('nowrow');if(r)r.scrollIntoView({block:'center'});}});});
+document.addEventListener('click',function(e){
+  var tp=e.target.closest('[data-topic]');
+  if(tp){var n=tp.getAttribute('data-topic');show('p-checklist',true);var d=document.getElementById('topic-'+n);if(d){d.open=true;d.scrollIntoView({block:'start'});window.scrollBy(0,-60);}return;}
+  var j=e.target.closest('[data-jump],[data-go]');
+  if(j){var id=j.getAttribute('data-jump')||j.getAttribute('data-go');var el=document.getElementById(id);if(el){var pn=el.closest('.panel');if(pn)show(pn.id,true);el.scrollIntoView({block:'start'});window.scrollBy(0,-60);}}
+});
+var hashMap={start:'p-start',timeline:'p-timeline',checklist:'p-checklist',revise:'p-revise',exam:'p-exam',progress:'p-progress'};
+var hs=(location.hash||'').replace('#','');
+var saved=null;try{saved=localStorage.getItem(KEY+'-tab');}catch(e){}
+if(hashMap[hs])show(hashMap[hs],true);else if(saved&&document.getElementById(saved))show(saved,true);
+})();
+</script>
+
+
+</body></html>
